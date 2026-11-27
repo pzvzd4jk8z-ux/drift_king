@@ -527,56 +527,56 @@ class Track{
 
 // ---------- автомобили ----------
 const CARS={
-  s15:{cabin:[-0.9,0.7,0.6,1.1],id:'s15',glassBox:[-1,-0.6,0.98,1.3,-0.85,-0.42],lockZ:[[0.78,2.14,0.5,0.6],[0.25,-0.95,1.2,0.8]],carbonZ:[[0.78,2.14,0.68,'h'],[0.25,-0.95,0.58,'r',1.2],[-1.65,-2.45,0.62,'t',0.64]],matchTrack:0.06,kitUV:[0.8818, 0.2227],wingBox:{z:-1.7,y:1.0,s:0},name:'NISSAN SILVIA S15',sub:'SR20DET · FR · 1240 кг',
+  s15:{cabin:[-0.9,0.7,0.6,1.1],id:'s15',pilB:[-0.58,-0.40],pilAC:[0.43,0.65,-0.94,0.60],win:{y0:0.91,z0:-1.48,z1:0.85,xMax:0.72,rz0:-0.92,rz1:0.22},lockZ:[[0.78,2.14,0.5,0.6],[0.25,-0.95,1.2,0.8]],carbonZ:[[0.78,2.14,0.68,'h'],[0.25,-0.95,0.58,'r',1.2],[-1.65,-2.45,0.62,'t',0.64]],matchTrack:0.06,kitUV:[0.8818, 0.2227],wingBox:{z:-1.7,y:1.0,s:0},name:'NISSAN SILVIA S15',sub:'SR20DET · FR · 1240 кг',
     mass:1240,L:4.45,W:1.70,wb:2.525,a:1.19,tw:1.48,hcg:0.46,R:0.31,Tmax:330,xp:0.62,redline:7200,idle:900,
     gears:[3.626,2.185,1.541,1.213,1.0,0.767],fd:4.08,muF:1.12,muR:1.0,Ik:0.82,steer:0.64,lock:0.55,
     defColor:'#e9edf2',stats:[6,9,6],wf:0.215,wr:0.245,exhaust:[-0.40],tail:'rect',
     body:[[0,.66,.30,.86],[.06,.76,.24,.93],[.15,.83,.2,.97],[.3,.85,.2,.98],[.5,.85,.2,.98],[.65,.85,.2,.97],[.78,.84,.2,.92],[.88,.80,.2,.84],[.95,.74,.24,.79],[1,.66,.3,.74]],
     cab:{u0:.30,u1:.72,base:.88,w:[[0,.60],[.2,.72],[.5,.745],[.8,.72],[1,.60]],top:[[0,.97],[.1,1.12],[.25,1.26],[.5,1.30],[.75,1.26],[.9,1.14],[1,.97]]},
     wing:'small',popups:false},
-  supra:{glassBoxes:[[-0.54,0.54,0.9,1.3,0.1,0.7],[-0.44,0.44,0.88,1.3,-1.6,-1.05,1]],cabinDark:0.3,cabin:[[-1.05,0.68,0.44,1.08],[-1.05,0.68,0.76,0.9]],id:'supra',carbonZ:[[0.68,2.17,0.63,'h'],[0.1,-1.05,0.58,'r',1.17],[-1.6,-2.45,0.62,'t',0.64]],blackHull:'supra',symAll:1,symInt:[0.58,0.45,1.0,-1.1,0.65],symKeep:[-0.65,0.0,0.55,1.08,-0.15,0.6],symSide:1,symRZ:0.87,smoothWide:[14,1],symGain:[1.1,1.0,1.0],smoothSide:[9,1.3],archCover:1,kitUV:[0.833, 0.7553],paintBoxes:[{x0:0,x1:0.82,y0:0.66,y1:0.99,z:-1.9},{x0:0.27,x1:0.6,y0:0.15,y1:0.46,z:-2.0}],wingBox:{z:-1.66,y:1.03,s:0.1},ex:0.03,glbTail:'a80',sq:[0.85,0.8],wfix:{xc:0.755,cy:0.36,zf:1.27,zr:-1.28,r:0.335,hw:0.11},name:'TOYOTA SUPRA MK4',sub:'2JZ-GTE · FR · 1510 кг',
+  supra:{winMode:'fit',sideCut:[-1.02,-0.72],pilB:[-0.72,-0.44],win:{y0:0.95,z0:-1.62,z1:0.72,cowlZ:0.49,xMax:0.74,rz0:-0.94,rz1:0.08},cabinDark:0.3,cabin:[[-1.05,0.68,0.44,1.08],[-1.05,0.68,0.76,0.9]],id:'supra',carbonZ:[[0.68,2.17,0.63,'h'],[0.1,-1.05,0.58,'r',1.17],[-1.6,-2.45,0.62,'t',0.64]],symAll:1,symInt:[0.58,0.45,1.0,-1.1,0.65],symKeep:[-0.65,0.0,0.55,1.08,-0.15,0.6],symSide:1,symRZ:0.87,smoothWide:[14,1],symGain:[1.1,1.0,1.0],smoothSide:[9,1.3],archCover:1,kitUV:[0.833, 0.7553],paintBoxes:[{x0:0,x1:0.82,y0:0.66,y1:0.99,z:-1.9},{x0:0.27,x1:0.6,y0:0.15,y1:0.46,z:-2.0}],wingBox:{z:-1.66,y:1.03,s:0.1},ex:0.03,glbTail:'a80',sq:[0.85,0.8],wfix:{xc:0.755,cy:0.36,zf:1.27,zr:-1.28,r:0.335,hw:0.11},name:'TOYOTA SUPRA MK4',sub:'2JZ-GTE · FR · 1510 кг',
     mass:1510,L:4.51,W:1.81,wb:2.55,a:1.28,tw:1.52,hcg:0.5,R:0.325,Tmax:470,xp:0.58,redline:7000,idle:900,
     gears:[3.827,2.36,1.685,1.312,1.0,0.793],fd:3.13,muF:1.1,muR:1.02,Ik:1.0,steer:0.58,lock:0.6,
     defColor:'#d1161d',stats:[9,6,8],wf:0.225,wr:0.265,exhaust:[0.42],tail:'round2',
     body:[[0,.70,.30,.92],[.06,.82,.24,.98],[.15,.88,.2,1.0],[.3,.9,.2,1.0],[.5,.9,.2,.98],[.65,.9,.2,.96],[.78,.88,.2,.90],[.88,.84,.2,.84],[.95,.78,.24,.80],[1,.70,.3,.74]],
     cab:{u0:.28,u1:.86,base:.90,w:[[0,.66],[.2,.76],[.5,.78],[.8,.74],[1,.62]],top:[[0,.98],[.12,1.14],[.25,1.24],[.45,1.28],[.65,1.24],[.82,1.13],[1,.96]]},
     wing:'gt',popups:false},
-  rx7:{glassBoxes:[[-0.62,0.62,0.88,1.25,0.1,0.88],[0.5,0.95,0.88,1.25,-1.0,0.45],[-0.95,-0.5,0.88,1.25,-1.0,0.45],[-0.7,0.7,0.8,1.2,-1.8,-0.9]],id:'rx7',carbonZ:[[0.5,2.06,0.72,'h'],[0.1,-0.95,0.68,'p',1.1],[-1.85,-2.45,0.66,'t',0.64]],kitUV:[0.0368, 0.3955],tyreMul:1.07,wingBox:{z:-1.62,y:0.882,s:0},ex:0.035,sq:[0.6,0.88],name:'MAZDA RX-7 FD',sub:'13B-REW · FR · 1280 кг',
+  rx7:{glassK:1.14,pilB:[-1.09,-0.77],pilAC:[0.34,0.70,-1.44,0.25],win:{y0:0.87,z0:-1.78,z1:0.88,xMax:0.72,rz0:-0.87,rz1:0.10},id:'rx7',carbonZ:[[0.5,2.06,0.72,'h'],[0.1,-0.95,0.68,'p',1.1],[-1.85,-2.45,0.66,'t',0.64]],kitUV:[0.0368, 0.3955],tyreMul:1.07,wingBox:{z:-1.62,y:0.882,s:0},ex:0.035,sq:[0.6,0.88],name:'MAZDA RX-7 FD',sub:'13B-REW · FR · 1280 кг',
     mass:1280,L:4.28,W:1.76,wb:2.43,a:1.215,tw:1.5,hcg:0.44,R:0.31,Tmax:360,xp:0.7,redline:8000,idle:950,
     gears:[3.483,2.015,1.391,1.0,0.719],fd:4.1,muF:1.14,muR:1.04,Ik:0.78,steer:0.68,lock:0.5,
     defColor:'#ffcc00',stats:[7,8,9],wf:0.22,wr:0.25,exhaust:[-0.45,0.45],tail:'round2',
     body:[[0,.68,.28,.90],[.06,.80,.22,.95],[.15,.87,.2,.97],[.3,.88,.2,.96],[.5,.88,.2,.93],[.65,.87,.2,.88],[.78,.86,.2,.82],[.88,.82,.2,.76],[.95,.76,.22,.72],[1,.68,.28,.68]],
     cab:{u0:.38,u1:.78,base:.84,w:[[0,.60],[.2,.70],[.5,.72],[.8,.68],[1,.56]],top:[[0,.88],[.12,1.02],[.3,1.14],[.5,1.19],[.7,1.13],[.88,1.0],[1,.9]]},
     wing:'duck',popups:true},
-  ae86:{id:'ae86',carbonZ:[[0.72,2.02,0.65,'h'],[0.2,-1.95,0.8,'p',1.02],[-1.88,-2.45,0.56,'t',0.64]],flareTex:true,kitUV:[0.4521, 0.9006],ex:0.05,sq:[0.6,0.77],name:'TOYOTA TRUENO AE86',sub:'4A-GE · FR · 950 кг',
+  ae86:{id:'ae86',glassK:1.24,pilB:[-0.71,-0.51],pilAC:[0.42,0.62,-1.52,0.20],win:{y0:0.93,z0:-1.58,z1:0.92,xMax:0.69,rz0:-1.00,rz1:0.14},carbonZ:[[0.72,2.02,0.65,'h'],[0.2,-1.95,0.8,'p',1.02],[-1.88,-2.45,0.56,'t',0.64]],flareTex:true,kitUV:[0.4521, 0.9006],ex:0.05,sq:[0.6,0.77],name:'TOYOTA TRUENO AE86',sub:'4A-GE · FR · 950 кг',
     mass:950,L:4.20,W:1.63,wb:2.40,a:1.12,tw:1.40,hcg:0.46,R:0.29,Tmax:165,xp:0.68,redline:7800,idle:900,
     gears:[3.587,2.022,1.384,1.0,0.861],fd:4.3,muF:1.08,muR:0.98,Ik:0.78,steer:0.70,lock:0.5,
     defColor:'#f4f4f2',stats:[3,10,7],wf:0.19,wr:0.19,exhaust:[-0.38],tail:'wrap',
     body:[[0,.62,.30,.86],[.06,.72,.26,.90],[.15,.78,.22,.92],[.3,.80,.22,.92],[.5,.80,.22,.92],[.7,.80,.22,.92],[.82,.79,.22,.90],[.92,.76,.24,.84],[.97,.72,.28,.78],[1,.64,.3,.72]],
     cab:{u0:.28,u1:.80,base:.88,w:[[0,.60],[.15,.70],[.5,.72],[.85,.70],[1,.60]],top:[[0,.93],[.1,1.20],[.22,1.33],[.5,1.35],[.8,1.32],[.93,1.2],[1,.95]]},
     wing:'duck',popups:true},
-  r34:{cabin:[-1.1,0.4,0.62,1.1],id:'r34',carbonZ:[[0.4,2.22,0.7,'h'],[0.2,-1.05,0.58,'r',1.2],[-1.1,-2.45,0.7,'t',0.64]],smoothSide:[4,0.7],rollRear:[-0.025,-1.75,-2.0],archCover:1,kitUV:[0.7102, 0.6502],wingBox:{z:-1.62,y:1.023,s:0.1},symWarp:[0.05,0.05],ex:0.015,sq:[0.65,0.73],name:'NISSAN SKYLINE GT-R R34',sub:'RB26DETT · FR-конверсия · 1560 кг',
+  r34:{winMode:'fit',sideCut:[-0.95,-0.62],pilB:[-0.63,-0.38],cabin:[-1.1,0.4,0.62,1.1],id:'r34',win:{y0:0.97,z0:-1.52,z1:0.78,cowlZ:0.54,xMax:0.74,rz0:-0.96,rz1:0.20},carbonZ:[[0.4,2.22,0.7,'h'],[0.2,-1.05,0.58,'r',1.2],[-1.1,-2.45,0.7,'t',0.64]],smoothSide:[4,0.7],rollRear:[-0.025,-1.75,-2.0],archCover:1,kitUV:[0.7102, 0.6502],wingBox:{z:-1.62,y:1.023,s:0.1},symWarp:[0.05,0.05],ex:0.015,sq:[0.65,0.73],name:'NISSAN SKYLINE GT-R R34',sub:'RB26DETT · FR-конверсия · 1560 кг',
     mass:1560,L:4.60,W:1.785,wb:2.665,a:1.36,tw:1.52,hcg:0.5,R:0.33,Tmax:500,xp:0.6,redline:8000,idle:950,
     gears:[3.827,2.36,1.685,1.312,1.0,0.793],fd:3.54,muF:1.1,muR:1.02,Ik:1.0,steer:0.58,lock:0.6,
     defColor:'#1f3a93',stats:[10,5,8],wf:0.235,wr:0.265,exhaust:[-0.45,0.45],tail:'round2',hood:'vent',
     body:[[0,.70,.32,.93],[.06,.82,.25,.99],[.15,.88,.2,1.0],[.3,.89,.2,1.0],[.5,.89,.2,.99],[.65,.89,.2,.97],[.78,.88,.2,.92],[.88,.85,.2,.86],[.95,.80,.24,.82],[1,.72,.3,.76]],
     cab:{u0:.30,u1:.77,base:.92,w:[[0,.66],[.2,.76],[.5,.775],[.8,.74],[1,.62]],top:[[0,.98],[.1,1.14],[.25,1.28],[.5,1.36],[.75,1.30],[.9,1.16],[1,.98]]},
     wing:'gt',popups:false},
-  sx180:{cabin:[-1.1,0.5,0.64,1.08],id:'sx180',carbonZ:[[0.5,2.18,0.68,'h'],[0.0,-1.25,0.58,'r',1.15],[-1.3,-2.45,0.66,'t',0.64]],symAll:1,symInt:[0.58,0.45,0.98,-1.25,0.6],symSide:0.9,symRZ:0.80,smoothWide:[14,1],smoothSide:[8,1.0],archCover:1,kitUV:[0.8411, 0.1481],wingBox:{z:-1.6,y:0.916,s:0},ex:0.02,sq:[0.62,0.80],name:'NISSAN 180SX (S13)',sub:'SR20DET · FR · 1190 кг',
+  sx180:{winMode:'fit',sideCut:[-1.20,-0.71],pilB:[-0.71,-0.39],cabin:[-1.1,0.5,0.64,1.08],id:'sx180',win:{y0:0.93,z0:-1.62,z1:0.74,cowlZ:0.50,xMax:0.71,rz0:-1.01,rz1:-0.02},carbonZ:[[0.5,2.18,0.68,'h'],[0.0,-1.25,0.58,'r',1.15],[-1.3,-2.45,0.66,'t',0.64]],symAll:1,symInt:[0.58,0.45,0.98,-1.25,0.6],symSide:0.9,symRZ:0.80,smoothWide:[14,1],smoothSide:[8,1.0],archCover:1,kitUV:[0.8411, 0.1481],wingBox:{z:-1.6,y:0.916,s:0},ex:0.02,sq:[0.62,0.80],name:'NISSAN 180SX (S13)',sub:'SR20DET · FR · 1190 кг',
     mass:1190,L:4.52,W:1.69,wb:2.425,a:1.13,tw:1.46,hcg:0.45,R:0.305,Tmax:300,xp:0.62,redline:7200,idle:900,
     gears:[3.321,1.902,1.308,1.0,0.759],fd:4.363,muF:1.1,muR:1.0,Ik:0.8,steer:0.66,lock:0.55,
     defColor:'#d8dade',stats:[6,9,7],wf:0.205,wr:0.235,exhaust:[-0.40],tail:'wrap',
     body:[[0,.66,.30,.88],[.06,.76,.24,.92],[.15,.82,.2,.95],[.3,.84,.2,.95],[.5,.84,.2,.95],[.65,.84,.2,.94],[.78,.83,.2,.88],[.88,.79,.2,.80],[.95,.73,.24,.75],[1,.65,.3,.70]],
     cab:{u0:.32,u1:.80,base:.88,w:[[0,.60],[.2,.71],[.5,.735],[.8,.70],[1,.58]],top:[[0,.95],[.1,1.10],[.22,1.24],[.5,1.29],[.78,1.24],[.92,1.12],[1,.96]]},
     wing:'small',popups:true},
-  s2000:{cabin:[-0.9,0.3,0.6,1.1],id:'s2000',carbonZ:[[0.3,1.97,0.62,'h'],[-1.1,-2.45,0.6,'t',0.64]],smoothSide:[4,0.7],archCover:1,kitUV:[0.0679, 0.7799],ex:0.01,sq:[0.62,0.85],name:'HONDA S2000 (AP1)',sub:'F20C · FR · 1260 кг · 9000 об/мин',
+  s2000:{winMode:'windshieldOnly',cabin:[-0.9,0.3,0.6,1.1],id:'s2000',win:{y0:0.95,z0:-0.10,z1:0.48,cowlZ:0.26,xMax:0.66,rz0:-0.20,rz1:0.04,conv:1},carbonZ:[[0.3,1.97,0.62,'h'],[-1.1,-2.45,0.6,'t',0.64]],smoothSide:[4,0.7],archCover:1,kitUV:[0.0679, 0.7799],ex:0.01,sq:[0.62,0.85],name:'HONDA S2000 (AP1)',sub:'F20C · FR · 1260 кг · 9000 об/мин',
     mass:1260,L:4.11,W:1.75,wb:2.40,a:1.2,tw:1.51,hcg:0.44,R:0.31,Tmax:208,xp:0.8,redline:9000,idle:1000,
     gears:[3.133,2.045,1.481,1.161,0.970,0.810],fd:4.1,muF:1.1,muR:1.0,Ik:0.78,steer:0.66,lock:0.5,
     defColor:'#b8bcc4',stats:[5,8,10],wf:0.205,wr:0.225,exhaust:[-0.4,0.4],tail:'slim',conv:true,
     body:[[0,.66,.28,.82],[.06,.78,.24,.88],[.15,.85,.2,.92],[.3,.87,.2,.93],[.5,.87,.2,.92],[.65,.87,.2,.91],[.78,.86,.2,.86],[.88,.82,.2,.78],[.95,.76,.22,.74],[1,.68,.28,.70]],
     cab:{conv:true,u0:.41,u1:.50,base:.9,w:[[0,.62],[.3,.72],[.7,.72],[1,.62]],top:[[0,1.1],[1,1.1]]},
     wing:'none',popups:false},
-  chaser:{id:'chaser',carbonZ:[[0.85,2.31,0.62,'h'],[0.3,-1.1,0.58,'r',1.25],[-1.65,-2.5,0.62,'t',0.64]],ringOld:true,glassK:1.25,kitUV:[0.8109, 0.1373],ex:0.04,noflush:true,sq:[0.75,0.77],wadj:{3:{cz:-1.11,cy:0.375,cx:0.06}},name:'TOYOTA CHASER JZX100',sub:'1JZ-GTE · FR · 1480 кг',
+  chaser:{id:'chaser',glassK:0.94,pilB:[-0.38,-0.18],pilAC:[0.50,0.60,-1.08,0.45],win:{y0:0.99,z0:-1.68,z1:1.06,xMax:0.74,rz0:-1.07,rz1:0.34},carbonZ:[[0.85,2.31,0.62,'h'],[0.3,-1.1,0.58,'r',1.25],[-1.65,-2.5,0.62,'t',0.64]],ringOld:true,kitUV:[0.8109, 0.1373],ex:0.04,noflush:true,sq:[0.75,0.77],wadj:{3:{cz:-1.11,cy:0.375,cx:0.06}},name:'TOYOTA CHASER JZX100',sub:'1JZ-GTE · FR · 1480 кг',
     mass:1480,L:4.78,W:1.755,wb:2.70,a:1.32,tw:1.5,hcg:0.52,R:0.325,Tmax:400,xp:0.6,redline:7200,idle:900,
     gears:[3.827,2.36,1.685,1.312,1.0,0.793],fd:3.769,muF:1.08,muR:1.02,Ik:1.0,steer:0.56,lock:0.6,
     defColor:'#e8e8ea',stats:[8,5,8],wf:0.22,wr:0.245,exhaust:[-0.45,0.45],tail:'rect',
@@ -1297,8 +1297,8 @@ const FinalShader={
     if(bk>0.0008){c=vec3(0.0);for(int i=0;i<10;i++){float t=float(i)/9.0;c+=texture2D(tDiffuse,vUv-dir*bk*t).rgb;}c/=10.0;}
     else c=texture2D(tDiffuse,vUv).rgb;
     c*=exposure;c=aces(c);c=pow(c,vec3(1.0/2.2));
-    float lu=dot(c,vec3(0.2126,0.7152,0.0722));c=mix(vec3(lu),c,1.12);
-    c=mix(c,c*c*(3.0-2.0*c),0.22);
+    float lu=dot(c,vec3(0.2126,0.7152,0.0722));c=mix(vec3(lu),c,1.18);
+    c=mix(c,c*c*(3.0-2.0*c),0.26);
     float v=smoothstep(0.95,0.25,length(dir*vec2(1.0,0.9)));c*=mix(1.0-vig,1.0,v);
     if(streak>0.01){float rr=length(dir*vec2(1.0,0.9)),an=atan(dir.y,dir.x)*70.0,cl=floor(an),hs=h21(vec2(cl,3.7));
       float ln=smoothstep(0.07,0.0,abs(fract(an)-0.5))*step(0.78,hs)*smoothstep(0.3,0.78,rr);
@@ -1319,7 +1319,7 @@ addEventListener('resize',resize);resize();
 
 // ---------- небо, окружение, освещение ----------
 const ENV={
-  garage:{top:'#05060c',mid:'#0c0e1c',hor:'#161226',sunDir:[0.35,0.85,0.4],sunCol:'#dfe8ff',sunI:2.2,hemiS:'#8c93a8',hemiG:'#22232a',hemiI:1.15,fog:'#0c0c12',fogD:0.0012,exp:1.1,stars:0,bloom:0.12,bt:1.6,sunK:0,smoke:'#aaaaaa',vig:0.35},
+  garage:{top:'#060812',mid:'#0d1022',hor:'#1a142c',sunDir:[0.38,0.85,0.42],sunCol:'#eef4ff',sunI:2.45,hemiS:'#a8b4d0',hemiG:'#282a34',hemiI:1.35,fog:'#0c0c12',fogD:0.0011,exp:1.12,stars:0,bloom:0.18,bt:1.45,sunK:0,smoke:'#aaaaaa',vig:0.32},
   touge:{top:'#16183f',mid:'#a8456a',hor:'#ff9a3c',sunDir:[-0.62,0.13,-0.55],sunCol:'#ffb060',sunI:3.2,hemiS:'#8a6a9a',hemiG:'#2a2030',hemiI:0.55,fog:'#7a4a58',fogD:0.0028,exp:1.15,stars:0.25,bloom:0.75,smoke:'#d8b9a0',vig:0.3},
   wangan:{top:'#04060f',mid:'#0c1430',hor:'#4a2c4a',sunDir:[-0.3,0.7,0.4],sunCol:'#a9c4ff',sunI:0.9,hemiS:'#6b7fa8',hemiG:'#2a2230',hemiI:0.9,fog:'#0d1220',fogD:0.0009,exp:1.2,stars:0.4,bloom:0.95,bt:0.8,sunK:0.1,smoke:'#9aa6b8',vig:0.35},
   parking:{top:'#04070f',mid:'#0a1a2e',hor:'#24516c',sunDir:[0.3,0.8,-0.45],sunCol:'#9fc2ff',sunI:1.15,hemiS:'#6d86a6',hemiG:'#1c2028',hemiI:0.85,fog:'#0a1520',fogD:0.0010,exp:1.2,stars:0.5,bloom:0.9,bt:0.85,sunK:0.12,smoke:'#a6b0c0',vig:0.35},
@@ -1362,12 +1362,12 @@ function applyEnv(id){
   scene.fog=new THREE.FogExp2(C(e.fog),e.fogD);
   bloom.threshold=e.bt||0.92;finalPass.uniforms.exposure.value=e.exp;finalPass.uniforms.vig.value=e.vig;bloom.strength=e.bloom;
   smokeU.tint.value.copy(C(e.smoke));
-  // панели неона для отражений в окружении
+  // панели неона и софтбоксы для отражений в окружении
   envPanels.forEach(p=>envScene.remove(p));envPanels=[];
   if(id==='garage'){
-    [-12,0,12].forEach(x=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(3,34),new THREE.MeshBasicMaterial({color:new THREE.Color(2.2,2.2,2.3),side:THREE.DoubleSide}));m.position.set(x,36,0);m.rotation.x=Math.PI/2;envScene.add(m);envPanels.push(m)});
-    [[-40,'#e6ecf6'],[40,'#ffe9d0']].forEach(([x,c])=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(26,9),new THREE.MeshBasicMaterial({color:HDR(c,1.6),side:THREE.DoubleSide}));m.position.set(x,10,0);m.lookAt(0,10,0);envScene.add(m);envPanels.push(m)});
-    const m=new THREE.Mesh(new THREE.PlaneGeometry(24,8),new THREE.MeshBasicMaterial({color:new THREE.Color(1.2,1.2,1.3),side:THREE.DoubleSide}));m.position.set(0,9,-40);m.lookAt(0,9,0);envScene.add(m);envPanels.push(m);
+    [-11,0,11].forEach(x=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(3.4,38),new THREE.MeshBasicMaterial({color:new THREE.Color(2.9,2.95,3.2),side:THREE.DoubleSide}));m.position.set(x,34,0);m.rotation.x=Math.PI/2;envScene.add(m);envPanels.push(m)});
+    [[-36,'#dff2ff',2.2],[36,'#ffe7cc',2.2]].forEach(([x,c,k])=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(30,9.5),new THREE.MeshBasicMaterial({color:HDR(c,k),side:THREE.DoubleSide}));m.position.set(x,11,0);m.lookAt(0,7,0);envScene.add(m);envPanels.push(m)});
+    [[0,-36,'#b9ecff',1.4],[0,36,'#ffd3ee',1.4]].forEach(([x,z,c,k])=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(26,7.5),new THREE.MeshBasicMaterial({color:HDR(c,k),side:THREE.DoubleSide}));m.position.set(x,9.5,z);m.lookAt(0,6,0);envScene.add(m);envPanels.push(m)});
   }else if(id==='wangan'){
     [[-40,3.0,1.8,0.8,10],[40,0.9,1.6,3.0,10],[0,1.6,1.6,2.2,38]].forEach(([x,r,g,b,y],i)=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(30,8),new THREE.MeshBasicMaterial({color:new THREE.Color(r,g,b),side:THREE.DoubleSide}));m.position.set(i===2?0:x,y,0);if(i<2)m.lookAt(0,y,0);else m.rotation.x=Math.PI/2;envScene.add(m);envPanels.push(m)});
   }else if(id==='parking'){
@@ -1386,7 +1386,7 @@ function applyEnv(id){
 }
 
 // динамические отражения кузова
-const cubeRT=new THREE.WebGLCubeRenderTarget(MOB?64:128,{type:THREE.HalfFloatType,generateMipmaps:true,minFilter:THREE.LinearMipmapLinearFilter});
+const cubeRT=new THREE.WebGLCubeRenderTarget(MOB?128:256,{type:THREE.HalfFloatType,generateMipmaps:true,minFilter:THREE.LinearMipmapLinearFilter});
 const cubeCam=new THREE.CubeCamera(0.4,3500,cubeRT);
 
 // ---------- текстуры ----------
@@ -2341,6 +2341,8 @@ function buildCar(d,cust){
     car.deform=[];det.visible=false;
     car.wheels.forEach(w=>{w.pivot.visible=false});
     const gm=makeGlbMesh(d);bodyG.add(gm);car.deform.push(gm);car.glbMesh=gm;
+    const gg=buildGlbGlass(gm,d);if(gg){bodyG.add(gg);car.glbGlass=gg}
+    const gc=buildGlbInterior(car,d,cust,gm);if(gc){bodyG.add(gc);car.glbCabin=gc}
     if(d.glbTail==='a80'){ // Supra A80: фонари — аккуратная вставка-«таблетка» с четырьмя красными кольцами, лежит прямо на родной поверхности кузова (никакой накладной панели)
       try{
       const org=gm.userData.orig,gidx=gm.geometry.index.array,tg=new THREE.Group();bodyG.add(tg);car.brakeDecals=tg;tg.visible=false;
@@ -2648,7 +2650,9 @@ function rebuildOverlay(car){
     const an=nr[i0*3+1]+nr[i1*3+1]+nr[i2*3+1],ax2=nr[i0*3]+nr[i1*3]+nr[i2*3];
     const sg=(nx*(nr[i0*3]+nr[i1*3]+nr[i2*3])+ny*an+nz*(nr[i0*3+2]+nr[i1*3+2]+nr[i2*3+2]))<0?-1:1;ny*=sg;nx*=sg;
     const mx=(ax+bx+cx)/3,my=(ay+by+cy)/3,mz=(az+bz+cz)/3;
-    let top=ny>0.8&&my>0.72;
+    const wn=d.win||{y0:0.9,z0:-1.7,z1:0.9,xMax:0.75,rz0:-1.0,rz1:0.2};
+    const inWin=my>wn.y0&&mz>wn.z0&&mz<wn.z1&&Math.abs(mx)<wn.xMax&&!(ny>0.84&&mz>=wn.rz0&&mz<=wn.rz1);
+    let top=ny>0.8&&my>0.72&&!inWin;
     if(top){const hh=hm.get(hk(mx,mz));if(hh!==undefined&&my<hh-0.03)top=false;else if(!isPaint(i0,i1,i2))top=false}
     const base=[[1,0,0,ax,ay,az],[0,1,0,bx,by,bz],[0,0,1,cx,cy,cz]]; // [w0,w1,w2,x,y,z]
     const P=(poly)=>poly.map(p=>[p[0],p[1],p[2],p[3],p[4],p[5]]);
@@ -2738,7 +2742,7 @@ const _pc=new THREE.Vector3(),_pv=new THREE.Vector3(),_pd=new THREE.Vector3(),_p
 function partDamage(car,lp,dirL,amt){
   const R=1.15,list=[],pp=car.pparts||(car.pparts=[]);
   const walk=g=>{g.children.forEach(o=>{
-    if(o===car.inter||o===car.overlay||o===car.glow||o.userData.pgone)return;
+    if(o===car.inter||o===car.overlay||o===car.glow||o===car.glbGlass||o===car.glbCabin||o.userData.noDmg||o.userData.pgone)return;
     if(o.isMesh){if(o.visible&&!car.deform.includes(o)&&o.geometry&&o.geometry.attributes.position)list.push(o);return}
     if(o.isGroup&&(o.visible||o===car.brakeDecals))walk(o)})};
   walk(car.bodyG);
@@ -2791,7 +2795,8 @@ function repairCar(car){
   repairParts(car);
   car.deform.forEach(m=>{
     const g=m.geometry;g.attributes.position.array.set(m.userData.orig);g.attributes.position.needsUpdate=true;m.userData.dmg.fill(0);m.userData.gone=false;
-    g.computeVertexNormals();g.computeBoundingSphere();
+    if(m.userData.origNor){g.attributes.normal.array.set(m.userData.origNor);g.attributes.normal.needsUpdate=true}else g.computeVertexNormals();
+    g.computeBoundingSphere();
     if(m.userData.kind==='bumper'&&m.parent!==car.bodyG){car.bodyG.add(m);m.position.copy(m.userData.home);m.quaternion.identity();m.scale.set(1,1,1)}
     m.visible=true;
   });
@@ -3107,6 +3112,83 @@ function glbTex(A,q){
     return A.tq[q]=nt;
   }catch(e){return t}
 }
+function glbWeldNormals(pos,nor,idx,minDot){
+  const n=pos.length/3,ia=idx.array||idx,T=ia.length/3,md=minDot!==undefined?minDot:0.38;
+  const cells=new Map(),gid=new Int32Array(n),head=[];
+  for(let i=0;i<n;i++){
+    const ix=Math.round(pos[i*3]*500)+2048,iy=Math.round(pos[i*3+1]*500)+512,iz=Math.round(pos[i*3+2]*500)+2048;
+    const k=(ix*4096+iy)*4096+iz;
+    let g=cells.get(k);if(g===undefined){g=head.length;cells.set(k,g);head.push(-1)}gid[i]=g;
+  }
+  const fnx=new Float32Array(T),fny=new Float32Array(T),fnz=new Float32Array(T);
+  const fux=new Float32Array(T),fuy=new Float32Array(T),fuz=new Float32Array(T);
+  const triId=new Int32Array(T*3),next=new Int32Array(T*3);let e=0;
+  for(let t=0;t<T;t++){
+    const a=ia[t*3],b=ia[t*3+1],c=ia[t*3+2];
+    const ux=pos[b*3]-pos[a*3],uy=pos[b*3+1]-pos[a*3+1],uz=pos[b*3+2]-pos[a*3+2];
+    const vx=pos[c*3]-pos[a*3],vy=pos[c*3+1]-pos[a*3+1],vz=pos[c*3+2]-pos[a*3+2];
+    const fx=uy*vz-uz*vy,fy=uz*vx-ux*vz,fz=ux*vy-uy*vx,fl=Math.hypot(fx,fy,fz)||1;
+    fnx[t]=fx;fny[t]=fy;fnz[t]=fz;fux[t]=fx/fl;fuy[t]=fy/fl;fuz[t]=fz/fl;
+    for(const v of [a,b,c]){const g=gid[v];triId[e]=t;next[e]=head[g];head[g]=e++}
+  }
+  for(let i=0;i<n;i++){
+    const nx0=nor[i*3],ny0=nor[i*3+1],nz0=nor[i*3+2],l0=Math.hypot(nx0,ny0,nz0);
+    if(l0<1e-6)continue;
+    const ux0=nx0/l0,uy0=ny0/l0,uz0=nz0/l0;
+    let sx=0,sy=0,sz=0;
+    for(let p=head[gid[i]];p>=0;p=next[p]){
+      const t=triId[p],dt=ux0*fux[t]+uy0*fuy[t]+uz0*fuz[t];
+      if(Math.abs(dt)>=md){const s=dt<0?-1:1;sx+=fnx[t]*s;sy+=fny[t]*s;sz+=fnz[t]*s}
+    }
+    const sl=Math.hypot(sx,sy,sz);
+    if(sl>1e-8){nor[i*3]=sx/sl;nor[i*3+1]=sy/sl;nor[i*3+2]=sz/sl}
+  }
+}
+function glbWinUniforms(sh,d,posG,lampZ,kuv){
+  sh.uniforms.kuv={value:new THREE.Vector2(kuv?kuv[0]:0,kuv?kuv[1]:0)};
+  {const GB=d.glassBoxes||(d.glassBox?[d.glassBox]:[]),a=[],b=[];for(let k=0;k<5;k++){const g=GB[k];a.push(new THREE.Vector4(g?g[0]:9,g?g[1]:9,g?g[2]:9,g?g[3]+(g[6]?10:0):9));b.push(new THREE.Vector2(g?g[4]:9,g?g[5]:9))}sh.uniforms.gbA={value:a};sh.uniforms.gbZ={value:b};sh.uniforms.hasGB={value:GB.length?1:0}}
+  {const L=d.lockZ||[],q=[0,1].map(k=>L[k]?new THREE.Vector4(L[k][0],L[k][1],L[k][2],L[k][3]):new THREE.Vector4(9,9,0,2));sh.uniforms.lkA={value:q};sh.uniforms.cabK={value:d.cabinDark||1};const cb=d.cabin?(Array.isArray(d.cabin[0])?d.cabin:[d.cabin]):[];sh.uniforms.cabA={value:[0,1].map(k=>cb[k]?new THREE.Vector4(cb[k][0],cb[k][1],cb[k][2],cb[k][3]):new THREE.Vector4(9,9,0,0))}}
+  sh.uniforms.hasK={value:kuv?1:0};sh.uniforms.glK={value:d.glassK||1};sh.uniforms.winX={value:d.winRel?d.W/2*0.62:0};
+  {let wy=[9,9];if(d.winRel){let hm=0;for(let i=0;i<posG.length;i+=3)if(Math.abs(posG[i])<0.5&&Math.abs(posG[i+2])<0.8&&posG[i+1]>hm)hm=posG[i+1];wy=[d.winRel[0]*hm,d.winRel[1]*hm]}sh.uniforms.winY={value:new THREE.Vector2(wy[0],wy[1])}}
+  sh.uniforms.zLamp={value:new THREE.Vector2(lampZ[0],lampZ[1])};
+  const wn=d.win||{y0:0.92,z0:-1.65,z1:0.9,xMax:0.74,rz0:-1.0,rz1:0.2};
+  sh.uniforms.winBox={value:new THREE.Vector4(wn.y0,wn.z0,wn.z1,wn.xMax)};
+  sh.uniforms.winRoof={value:new THREE.Vector4(wn.rz0,wn.rz1,wn.conv?1:0,d.glbTail==='a80'?0.4:1.0)};
+  sh.uniforms.uWinMode={value:d.winMode==='windshieldOnly'?2.0:(d.winMode==='fit'?1.0:0.0)};
+  const sc=d.sideCut||[9,9],pb=d.pilB||[9,9],pac=d.pilAC||[9,0,-9,0];
+  sh.uniforms.uSideCut={value:new THREE.Vector2(sc[0],sc[1])};
+  sh.uniforms.uPilB={value:new THREE.Vector2(pb[0],pb[1])};
+  sh.uniforms.uPilAC={value:new THREE.Vector4(pac[0],pac[1],pac[2],pac[3])};
+}
+const GLB_WIN_GLSL=`
+  float gmx=max(sdc.r,max(sdc.g,sdc.b)),gmn=min(sdc.r,min(sdc.g,sdc.b));
+  float gsat=(gmx-gmn)/(gmx+0.06);
+  float refM=0.85,prSat=0.0;if(hasK>0.5){vec3 pr0=texture2D(map,kuv).rgb;refM=max(0.35,max(pr0.r,max(pr0.g,pr0.b)));float prMn=min(pr0.r,min(pr0.g,pr0.b));prSat=(refM-prMn)/(refM+0.06);}
+  float refCut=mix(refM,max(refM,0.72),smoothstep(0.22,0.36,prSat)*(1.0-smoothstep(0.10,0.22,gsat)));
+  float gl=(1.0-smoothstep(0.20,0.34,gsat))*(1.0-smoothstep(0.42*refCut*glK,0.62*refCut*glK,gmx));
+  float wz=step(winY.x,vOP.y)*step(vOP.y,winY.y)*(1.0-smoothstep(0.86,0.95,abs(vON.y)))*smoothstep(0.45,0.55,gmx)*(1.0-smoothstep(0.2,0.3,gsat));
+  float wInner=(1.0-smoothstep(winX,winX+0.05,abs(vOP.x)))*smoothstep(0.45,0.7,abs(vON.z));
+  wz*=max(1.0-smoothstep(0.87,0.93,gmx)*(1.0-smoothstep(0.03,0.07,gsat)),wInner);
+  gl=max(gl,wz);
+  if(hasGB>0.5){for(int k=0;k<5;k++){float nG=step(5.0,gbA[k].w);gl=max(gl,step(gbA[k].x,vOP.x)*step(vOP.x,gbA[k].y)*step(gbA[k].z,vOP.y)*step(vOP.y,gbA[k].w-10.0*nG)*step(gbZ[k].x,vOP.z)*step(vOP.z,gbZ[k].y)*mix(mix(1.0-smoothstep(0.975,0.995,vON.y),1.0-smoothstep(0.78,0.9,vON.y),step(0.0,gbA[k].x*gbA[k].y)),1.0,nG));}}
+  float lk=0.0;for(int k=0;k<2;k++){vec4 a=lkA[k];lk=max(lk,step(min(a.x,a.y),vOP.z)*step(vOP.z,max(a.x,a.y))*step(a.z,vOP.y)*step(a.w,vON.y));}
+  float cin=max(step(cabA[0].x,vOP.z)*step(vOP.z,cabA[0].y)*step(abs(vOP.x),cabA[0].z)*step(vOP.y,cabA[0].w),step(cabA[1].x,vOP.z)*step(vOP.z,cabA[1].y)*step(abs(vOP.x),cabA[1].z)*step(vOP.y,cabA[1].w));
+  float ex=step(0.5,vExt)*(1.0-cin);lk*=ex;gl*=1.0-lk;
+  float wBand=smoothstep(winBox.x-0.015,winBox.x+0.015,vOP.y)*smoothstep(winBox.y-0.02,winBox.y+0.02,vOP.z)*(1.0-smoothstep(winBox.z-0.02,winBox.z+0.02,vOP.z))*(1.0-smoothstep(winBox.w-0.04,winBox.w,abs(vOP.x)));
+  float notRoof=1.0-smoothstep(0.82,0.91,vON.y)*step(winRoof.x-0.04,vOP.z)*step(vOP.z,winRoof.y+0.04);
+  float sideFace=smoothstep(0.32,0.48,abs(vON.x));
+  float dyP=max(vOP.y-winBox.x,0.0);
+  float pilB=smoothstep(uPilB.x-0.012,uPilB.x+0.008,vOP.z)*(1.0-smoothstep(uPilB.y-0.008,uPilB.y+0.012,vOP.z));
+  float pilA=smoothstep(uPilAC.x-dyP*uPilAC.y-0.012,uPilAC.x-dyP*uPilAC.y+0.012,vOP.z);
+  float pilC=1.0-smoothstep(uPilAC.z+dyP*uPilAC.w-0.012,uPilAC.z+dyP*uPilAC.w+0.012,vOP.z);
+  float notPillar=1.0-sideFace*clamp(max(pilB,max(pilA,pilC)),0.0,1.0);
+  float sideCutOk=1.0;
+  if(uWinMode>0.5&&uWinMode<1.5){
+    sideCutOk=sideFace*smoothstep(uSideCut.x-0.015,uSideCut.x+0.015,vOP.z)*(1.0-smoothstep(uSideCut.y-0.015,uSideCut.y+0.015,vOP.z))*smoothstep(winBox.x+0.02,winBox.x+0.05,vOP.y);
+  }else if(uWinMode>=1.5){sideCutOk=0.0;}
+  float winZone=clamp(wBand*notRoof*notPillar*sideCutOk,0.0,1.0);
+  float winMask=gl*winZone*step(0.45,vExt);
+`;
 function makeGlbMesh(d){
   const A=glbAssets[d.id],flip=!!glbFlips[d.id],ck=flip+'|'+!!opts().wheels;
   if(!A.pc||A.pc.key!==ck){ // подготовка и поиск колёс дорогие, поэтому результат кэшируется
@@ -3147,6 +3229,8 @@ function makeGlbMesh(d){
         if(!kill)kk.push(a,b,c)}
       keepIdx=new Uint32Array(kk)}
   }
+  const finalIdx=keepIdx?new THREE.BufferAttribute(keepIdx,1):idx;
+  glbWeldNormals(posG,norG,finalIdx,0.38);
   g.setAttribute('position',new THREE.BufferAttribute(posG,3));g.setAttribute('normal',new THREE.BufferAttribute(norG,3));
   g.setAttribute('uv',A.pc.uv);
   const pbIdx=[];
@@ -3154,7 +3238,7 @@ function makeGlbMesh(d){
     for(let t=0;t<ia.length;t+=3){const a=ia[t],b=ia[t+1],c=ia[t+2],cx=Math.abs(posG[a*3]+posG[b*3]+posG[c*3])/3,cy=(posG[a*3+1]+posG[b*3+1]+posG[c*3+1])/3,cz=(posG[a*3+2]+posG[b*3+2]+posG[c*3+2])/3;
       }}
   if(((sq&&sq.length)||pbIdx.length)&&d.kitUV){const u2=new Float32Array(A.pc.uv.array||A.pc.uv);for(const i of (sq||[])){u2[i*2]=d.kitUV[0];u2[i*2+1]=d.kitUV[1]}for(const i of pbIdx){u2[i*2]=d.kitUV[0];u2[i*2+1]=d.kitUV[1]}g.setAttribute('uv',new THREE.BufferAttribute(u2,2))}
-  g.setIndex(keepIdx?new THREE.BufferAttribute(keepIdx,1):idx);
+  g.setIndex(finalIdx);
   const n=pr.pos.length/3;
   {const ia=keepIdx||(idx.array||idx),CS=0.04,hmT=new Map(),K=(i,j)=>i*8192+j; // карта высот верхней поверхности: отличает внешнюю панель от салона под ней
    for(let t=0;t<ia.length;t+=3){const a=ia[t]*3,b=ia[t+1]*3,c=ia[t+2]*3,x0=posG[a],z0=posG[a+2],x1=posG[b],z1=posG[b+2],x2=posG[c],z2=posG[c+2],den=(z1-z2)*(x0-x2)+(x2-x1)*(z0-z2);if(Math.abs(den)<1e-9)continue;
@@ -3163,7 +3247,7 @@ function makeGlbMesh(d){
      if(l0<-0.03||l1<-0.03||l2<-0.03)continue;const y=l0*posG[a+1]+l1*posG[b+1]+l2*posG[c+1],k=K(i+4096,j+4096);if(!(hmT.get(k)>=y))hmT.set(k,y)}}
    const aT=new Float32Array(n);for(let i=0;i<n;i++){const h=hmT.get(K(Math.floor(posG[i*3]/CS)+4096,Math.floor(posG[i*3+2]/CS)+4096));aT[i]=(h===undefined||posG[i*3+1]>=h-0.07)?1:0}
    g.setAttribute('aTop',new THREE.BufferAttribute(aT,1));
-   // внешняя оболочка: вершина «снаружи», если она у внешней границы кузова при взгляде сверху/сбоку/спереди/сзади; салон внутри оболочки остаётся с родной текстурой
+   // внешняя оболочка: вершина «снаружи», если она у внешней границы кузова при взгляде сверху/сбоку/спереди/сзади
    const env=(U,V,Wd)=>{const mp=new Map();for(let t=0;t<ia.length;t+=3){const q=[ia[t]*3,ia[t+1]*3,ia[t+2]*3],u=q.map(o=>posG[o+U]),v=q.map(o=>posG[o+V]),w=q.map(o=>posG[o+Wd]),den=(v[1]-v[2])*(u[0]-u[2])+(u[2]-u[1])*(v[0]-v[2]);if(Math.abs(den)<1e-9)continue;
      const i0=Math.floor(Math.min(...u)/CS),i1=Math.floor(Math.max(...u)/CS),j0=Math.floor(Math.min(...v)/CS),j1=Math.floor(Math.max(...v)/CS);if((i1-i0+1)*(j1-j0+1)>4000)continue;
      for(let i=i0;i<=i1;i++)for(let j=j0;j<=j1;j++){const pu=(i+0.5)*CS,pv=(j+0.5)*CS,l0=((v[1]-v[2])*(pu-u[2])+(u[2]-u[1])*(pv-v[2]))/den,l1=((v[2]-v[0])*(pu-u[2])+(u[0]-u[2])*(pv-v[2]))/den,l2=1-l0-l1;
@@ -3174,38 +3258,45 @@ function makeGlbMesh(d){
     aE[i]=(!e1||y>=e1[1]-TL||!e2||x>=e2[1]-TL||x<=e2[0]+TL||!e3||z>=e3[1]-TL||z<=e3[0]+TL)?1:0}
    g.setAttribute('aExt',new THREE.BufferAttribute(aE,1))}
   g.setAttribute('color',new THREE.BufferAttribute(pr.gain&&pr.gain.length===n*3?new Float32Array(pr.gain):new Float32Array(n*3).fill(1),3));
-  const mat=new THREE.MeshStandardMaterial({map:glbTex(A,opts().tex),vertexColors:true,roughness:0.4,metalness:0.2,envMap:cubeRT.texture,envMapIntensity:1.25,side:THREE.DoubleSide});
+  const mat=new THREE.MeshPhysicalMaterial({map:glbTex(A,opts().tex),vertexColors:true,roughness:0.24,metalness:0.42,clearcoat:1.0,clearcoatRoughness:0.045,ior:1.52,reflectivity:0.92,envMap:cubeRT.texture,envMapIntensity:1.6,side:THREE.DoubleSide});
   const kuv=d.kitUV||null;let zmn=1e9,zmx=-1e9;for(let i=2;i<posG.length;i+=3){const z=posG[i];if(z<zmn)zmn=z;if(z>zmx)zmx=z}
-  const lampZ=[zmn+0.4,zmx-0.45];
+  const lampZ=[zmn+0.42,zmx-0.46];
   mat.userData.carbU={value:0};
-  mat.onBeforeCompile=sh=>{ // стёкла и тёмный пластик (серое/тёмное в текстуре) всегда чёрные; фонари и цветные наклейки (оттенок отличается от краски кузова) краска не затрагивает
-    sh.uniforms.kuv={value:new THREE.Vector2(kuv?kuv[0]:0,kuv?kuv[1]:0)};
-    sh.uniforms.carbOn=mat.userData.carbU;{const GB=d.glassBoxes||(d.glassBox?[d.glassBox]:[]),a=[],b=[];for(let k=0;k<5;k++){const g=GB[k];a.push(new THREE.Vector4(g?g[0]:9,g?g[1]:9,g?g[2]:9,g?g[3]+(g[6]?10:0):9));b.push(new THREE.Vector2(g?g[4]:9,g?g[5]:9))}sh.uniforms.gbA={value:a};sh.uniforms.gbZ={value:b};sh.uniforms.hasGB={value:GB.length?1:0}}{const L=d.lockZ||[],q=[0,1].map(k=>L[k]?new THREE.Vector4(L[k][0],L[k][1],L[k][2],L[k][3]):new THREE.Vector4(9,9,0,2));sh.uniforms.lkA={value:q};sh.uniforms.cabK={value:d.cabinDark||1};const cb=d.cabin?(Array.isArray(d.cabin[0])?d.cabin:[d.cabin]):[];sh.uniforms.cabA={value:[0,1].map(k=>cb[k]?new THREE.Vector4(cb[k][0],cb[k][1],cb[k][2],cb[k][3]):new THREE.Vector4(9,9,0,0))}}
+  mat.userData.uBrake={value:0};
+  mat.userData.lampZ=lampZ;
+  mat.onBeforeCompile=sh=>{
+    glbWinUniforms(sh,d,posG,lampZ,kuv);
+    sh.uniforms.carbOn=mat.userData.carbU;
+    sh.uniforms.uBrake=mat.userData.uBrake;
     {const CZ=d.carbonZ||[],A=[],B=[],dk={h:[0.3,0.5],r:[0.35,1.1],p:[0.3,0.95],t:[-0.3,0.78]};for(let k=0;k<3;k++){const z=CZ[k];if(z){const kd=dk[z[3]||'r'];A.push(new THREE.Vector4(z[0],z[1],z[2],0));B.push(new THREE.Vector4(z[5]==='all'?-1.1:kd[0],z[4]!==undefined?z[4]:kd[1],z[3]==='t'||z[5]==='all'?0:1,0))}else{A.push(new THREE.Vector4(9,9,0,0));B.push(new THREE.Vector4(2,9,0,0))}}
      sh.uniforms.cZa={value:A};sh.uniforms.cZb={value:B}}
     {const pbx=d.paintBoxes||[],b1=pbx[0]||{x0:9,x1:9,y0:9,y1:9,z:-9},b2=pbx[1]||{x0:9,x1:9,y0:9,y1:9,z:-9};
-     sh.uniforms.pb1={value:new THREE.Vector4(b1.x0,b1.x1,b1.y0,b1.y1)};sh.uniforms.pb2={value:new THREE.Vector4(b2.x0,b2.x1,b2.y0,b2.y1)};sh.uniforms.pbz={value:new THREE.Vector2(b1.z,b2.z)};sh.uniforms.hasPB={value:pbx.length?1:0}}sh.uniforms.hasK={value:kuv?1:0};sh.uniforms.glRough={value:d.matteGlass?1:0};sh.uniforms.glK={value:d.glassK||1};sh.uniforms.winX={value:d.winRel?d.W/2*0.62:0};{let wy=[9,9];if(d.winRel){let hm=0;for(let i=0;i<posG.length;i+=3)if(Math.abs(posG[i])<0.5&&Math.abs(posG[i+2])<0.8&&posG[i+1]>hm)hm=posG[i+1];wy=[d.winRel[0]*hm,d.winRel[1]*hm]}sh.uniforms.winY={value:new THREE.Vector2(wy[0],wy[1])}}sh.uniforms.zLamp={value:new THREE.Vector2(lampZ[0],lampZ[1])};
+     sh.uniforms.pb1={value:new THREE.Vector4(b1.x0,b1.x1,b1.y0,b1.y1)};sh.uniforms.pb2={value:new THREE.Vector4(b2.x0,b2.x1,b2.y0,b2.y1)};sh.uniforms.pbz={value:new THREE.Vector2(b1.z,b2.z)};sh.uniforms.hasPB={value:pbx.length?1:0}}
     sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vOP;varying vec3 vON;attribute float aTop;varying float vTop;attribute float aExt;varying float vExt;').replace('#include <begin_vertex>','#include <begin_vertex>\nvOP=position;vON=normal;vTop=aTop;vExt=aExt;');
-    sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nuniform vec4 pb1;uniform vec4 pb2;uniform vec2 pbz;uniform float hasPB;uniform vec2 kuv;uniform float hasK;uniform vec2 zLamp;uniform vec2 winY;uniform float winX;uniform float glRough;uniform float glK;float glMask=0.0;float carbM=0.0;uniform vec4 gbA[5];uniform vec2 gbZ[5];uniform float hasGB;uniform vec4 lkA[2];uniform vec4 cabA[2];uniform float cabK;float hueA(vec3 x){return atan(1.7320508*(x.g-x.b),2.0*x.r-x.g-x.b+1e-5);}float hueD(vec3 a,vec3 b){float d=abs(hueA(a)-hueA(b));d=min(d,6.2832-d);return d/3.1416;}uniform float carbOn;uniform vec4 cZa[3];uniform vec4 cZb[3];varying float vTop;varying float vExt;varying vec3 vOP;varying vec3 vON;').replace('#include <roughnessmap_fragment>','#include <roughnessmap_fragment>\nroughnessFactor=mix(roughnessFactor,0.85,glMask*glRough);roughnessFactor=mix(roughnessFactor,0.34,carbM);').replace('#include <metalnessmap_fragment>','#include <metalnessmap_fragment>\nmetalnessFactor=mix(metalnessFactor,0.0,glMask*glRough);metalnessFactor=mix(metalnessFactor,0.3,carbM);').replace('#include <map_fragment>',`
+    sh.fragmentShader=sh.fragmentShader
+      .replace('#include <common>','#include <common>\nuniform vec4 pb1;uniform vec4 pb2;uniform vec2 pbz;uniform float hasPB;uniform vec2 kuv;uniform float hasK;uniform vec2 zLamp;uniform vec2 winY;uniform float winX;uniform float glK;uniform vec4 winBox;uniform vec4 winRoof;uniform float uWinMode;uniform vec2 uSideCut;uniform vec2 uPilB;uniform vec4 uPilAC;float trimM=0.0;float carbM=0.0;float chromeM=0.0;float lampGlowF=0.0;float lampGlowR=0.0;float lensM=0.0;uniform float uBrake;uniform vec4 gbA[5];uniform vec2 gbZ[5];uniform float hasGB;uniform vec4 lkA[2];uniform vec4 cabA[2];uniform float cabK;float hueA(vec3 x){return atan(1.7320508*(x.g-x.b),2.0*x.r-x.g-x.b+1e-5);}float hueD(vec3 a,vec3 b){float d=abs(hueA(a)-hueA(b));d=min(d,6.2832-d);return d/3.1416;}uniform float carbOn;uniform vec4 cZa[3];uniform vec4 cZb[3];varying float vTop;varying float vExt;varying vec3 vOP;varying vec3 vON;')
+      .replace('#include <roughnessmap_fragment>','#include <roughnessmap_fragment>\nroughnessFactor=mix(roughnessFactor,0.78,trimM);\nroughnessFactor=mix(roughnessFactor,0.16,chromeM);\nroughnessFactor=mix(roughnessFactor,0.22,carbM);\nroughnessFactor=mix(roughnessFactor,0.08,lensM);')
+      .replace('#include <metalnessmap_fragment>','#include <metalnessmap_fragment>\nmetalnessFactor=mix(metalnessFactor,0.06,trimM);\nmetalnessFactor=mix(metalnessFactor,0.90,chromeM);\nmetalnessFactor=mix(metalnessFactor,0.24,carbM);\nmetalnessFactor=mix(metalnessFactor,0.12,lensM);')
+      .replace('#include <lights_physical_fragment>','#include <lights_physical_fragment>\n#ifdef USE_CLEARCOAT\nmaterial.clearcoat*=mix(1.0,0.0,trimM)*(1.0-0.55*chromeM);\nmaterial.clearcoatRoughness=mix(material.clearcoatRoughness,0.05,carbM);\n#endif')
+      .replace('#include <emissivemap_fragment>','#include <emissivemap_fragment>\ntotalEmissiveRadiance+=vec3(1.55,1.46,1.28)*lampGlowF+vec3(1.0,0.07,0.05)*lampGlowR*(0.85+2.3*uBrake)*winRoof.w;')
+      .replace('#include <map_fragment>',`
     #ifdef USE_MAP
       vec4 sdc=texture2D(map,vUv);
       float pax=abs(vOP.x);
       float pin1=step(pb1.x,pax)*step(pax,pb1.y)*step(pb1.z,vOP.y)*step(vOP.y,pb1.w)*step(vOP.z,pbz.x);
       float pin2=step(pb2.x,pax)*step(pax,pb2.y)*step(pb2.z,vOP.y)*step(vOP.y,pb2.w)*step(vOP.z,pbz.y);
       if(hasK>0.5&&hasPB>0.5)sdc.rgb=mix(sdc.rgb,texture2D(map,kuv).rgb,max(pin1,pin2));
-      float gmx=max(sdc.r,max(sdc.g,sdc.b)),gmn=min(sdc.r,min(sdc.g,sdc.b));
-      float gsat=(gmx-gmn)/(gmx+1e-4);
-      float refM=0.85;if(hasK>0.5){vec3 pr0=texture2D(map,kuv).rgb;refM=max(0.35,max(pr0.r,max(pr0.g,pr0.b)));}
-      float gl=(1.0-smoothstep(0.18,0.32,gsat))*(1.0-smoothstep(0.42*refM*glK,0.62*refM*glK,gmx));
-      float wz=step(winY.x,vOP.y)*step(vOP.y,winY.y)*(1.0-smoothstep(0.86,0.95,abs(vON.y)))*smoothstep(0.45,0.55,gmx)*(1.0-smoothstep(0.2,0.3,gsat));float wInner=(1.0-smoothstep(winX,winX+0.05,abs(vOP.x)))*smoothstep(0.45,0.7,abs(vON.z));wz*=max(1.0-smoothstep(0.87,0.93,gmx)*(1.0-smoothstep(0.03,0.07,gsat)),wInner);gl=max(gl,wz);if(hasGB>0.5){for(int k=0;k<5;k++){float nG=step(5.0,gbA[k].w);gl=max(gl,step(gbA[k].x,vOP.x)*step(vOP.x,gbA[k].y)*step(gbA[k].z,vOP.y)*step(vOP.y,gbA[k].w-10.0*nG)*step(gbZ[k].x,vOP.z)*step(vOP.z,gbZ[k].y)*mix(mix(1.0-smoothstep(0.975,0.995,vON.y),1.0-smoothstep(0.78,0.9,vON.y),step(0.0,gbA[k].x*gbA[k].y)),1.0,nG));}}
-      float lk=0.0;for(int k=0;k<2;k++){vec4 a=lkA[k];lk=max(lk,step(min(a.x,a.y),vOP.z)*step(vOP.z,max(a.x,a.y))*step(a.z,vOP.y)*step(a.w,vON.y));}float cin=max(step(cabA[0].x,vOP.z)*step(vOP.z,cabA[0].y)*step(abs(vOP.x),cabA[0].z)*step(vOP.y,cabA[0].w),step(cabA[1].x,vOP.z)*step(vOP.z,cabA[1].y)*step(abs(vOP.x),cabA[1].z)*step(vOP.y,cabA[1].w));float ex=step(0.5,vExt)*(1.0-cin);lk*=ex;gl*=1.0-lk;
+      ${GLB_WIN_GLSL}
+      if(winMask>0.50)discard;
+      if(winRoof.z<0.5&&vExt<0.45&&vOP.y>winBox.x-0.36&&vOP.z>winBox.y-0.12&&vOP.z<winBox.z+0.12)discard;
       vec3 tinted=diffuseColor.rgb*sdc.rgb;
-      { // убираем запечённые в текстуре пятна света/тени и «отражения» на краске: берём цвет эталонной краски, оставляем только мелкие детали (швы, стыки)
+      float pk=0.0;
+      {
         vec3 prF=hasK>0.5?texture2D(map,kuv).rgb:sdc.rgb;
         float lS=dot(sdc.rgb,vec3(0.299,0.587,0.114)),lR=dot(prF,vec3(0.299,0.587,0.114)),lB=dot(texture2D(map,vUv,5.0).rgb,vec3(0.299,0.587,0.114))+1e-3;
-        float rt=mix(clamp(lS/lB,0.6,1.0),1.0,lk);
+        float rt=mix(clamp(lS/lB,0.68,1.04),1.0,lk);
         vec3 c1p=sdc.rgb/(sdc.r+sdc.g+sdc.b+1e-4),c2p=prF/(prF.r+prF.g+prF.b+1e-4);
-        float pk=max(max(1.0-smoothstep(0.12,0.3,distance(c1p,c2p)),(1.0-smoothstep(0.05,0.12,hueD(sdc.rgb,prF)))*smoothstep(0.12,0.25,gsat)),smoothstep(1.02*lR,1.3*lR,lS)*(1.0-smoothstep(0.25,0.45,gsat)))*(1.0-smoothstep(0.55,0.9,max(lR-lS,0.0)/max(lR,0.2)))*(1.0-smoothstep(0.1,0.35,gl))*step(0.5,hasK);pk=max(pk,lk*step(0.5,hasK));
+        pk=max(max(1.0-smoothstep(0.12,0.3,distance(c1p,c2p)),(1.0-smoothstep(0.05,0.12,hueD(sdc.rgb,prF)))*smoothstep(0.12,0.25,gsat)),smoothstep(1.02*lR,1.3*lR,lS)*(1.0-smoothstep(0.25,0.45,gsat)))*(1.0-smoothstep(0.55,0.9,max(lR-lS,0.0)/max(lR,0.2)))*(1.0-smoothstep(0.1,0.35,gl))*step(0.5,hasK);pk=max(pk,lk*step(0.5,hasK));
         tinted=diffuseColor.rgb*mix(sdc.rgb,prF*rt,pk*0.92);
         tinted=mix(sdc.rgb*mix(1.0,cabK,cin),tinted,ex);
       }
@@ -3216,21 +3307,327 @@ function makeGlbMesh(d){
         lampm=smoothstep(0.14,0.26,distance(c1,c2))*smoothstep(0.3,0.45,gsat)*smoothstep(0.03,0.08,gmx)*smoothstep(0.06,0.14,hueD(sdc.rgb,pr));
       }
       diffuseColor.a*=sdc.a;
-      float zone=(vOP.z>zLamp.y&&vOP.y>0.45&&vOP.y<0.88)||(vOP.z<zLamp.x&&vOP.y>0.5&&vOP.y<1.0)?1.0:0.0;
+      float fZone=step(zLamp.y,vOP.z)*step(0.40,vOP.y)*step(vOP.y,0.92)*step(0.26,abs(vOP.x));
+      float rZone=step(vOP.z,zLamp.x)*step(0.46,vOP.y)*step(vOP.y,1.02)*step(0.22,abs(vOP.x));
+      float zone=max(fZone,rZone);
       lampm*=1.0-lk;
-      float lens=(1.0-lk)*zone*(1.0-smoothstep(0.18,0.32,gsat))*(1.0-smoothstep(0.5,0.66,gmx))*step(0.08,gmx);
-      diffuseColor.rgb=mix(mix(tinted,sdc.rgb,max(lampm,lens)),vec3(0.012,0.013,0.016),gl*(1.0-lens));glMask=gl*(1.0-lens);
+      float lens=(1.0-lk)*zone*(1.0-smoothstep(0.18,0.34,gsat))*(1.0-smoothstep(0.48,0.68,gmx))*step(0.08,gmx);
+      float fBright=fZone*(1.0-lk)*(1.0-smoothstep(0.20,0.55,pk))*ex*smoothstep(0.45,0.72,gmx)*(1.0-smoothstep(0.20,0.42,gsat))*step(0.2,vON.z);
+      float rRed=rZone*(1.0-lk)*(1.0-smoothstep(0.20,0.55,pk))*ex*smoothstep(0.14,0.32,sdc.r-max(sdc.g,sdc.b)*1.15)*step(0.18,gmx)*step(0.18,-vON.z);
+      lampGlowF=fBright;
+      lampGlowR=rRed;
+      lensM=max(lens,max(fBright,rRed))*ex;
+      float gasket=smoothstep(0.24,0.48,winMask);
+      float nonWinGl=gl*(1.0-lens)*(1.0-winZone);
+      float rawTrim=max(nonWinGl,gasket);
+      chromeM=ex*(1.0-pk)*(1.0-gl)*(1.0-zone)*smoothstep(0.56,0.72,gmx)*(1.0-smoothstep(0.10,0.22,gsat))*(1.0-winZone);
+      diffuseColor.rgb=mix(mix(tinted,sdc.rgb,max(lampm,lens)),vec3(0.016,0.018,0.022),rawTrim);
+      diffuseColor.rgb=mix(diffuseColor.rgb,vec3(0.76,0.80,0.85),chromeM*0.55);
+      trimM=clamp(rawTrim,0.0,1.0);
       if(carbOn>0.5){float cm=0.0,ctk=0.0;for(int k=0;k<3;k++){vec4 a=cZa[k],b=cZb[k];float inz=step(min(a.x,a.y),vOP.z)*step(vOP.z,max(a.x,a.y))*step(abs(vOP.x),a.z)*step(b.x,vON.y)*step(b.y,vOP.y)*max(step(0.99,vTop),1.0-b.z);cm=max(cm,inz);ctk=max(ctk,inz*(1.0-b.z)*step(b.x,-0.2));}
-        cm*=ex*mix(1.0-smoothstep(0.08,0.4,gl),1.0,ctk)*(1.0-smoothstep(0.1,0.3,max(lampm,lens)));
-        if(cm>0.0){vec2 q=vec2(vOP.x,vOP.z+vOP.y*0.9)*58.0;vec2 cc=floor(q),f=fract(q);float tw=mod(floor(cc.x*0.5)+floor(cc.y*0.5),2.0);float th=tw>0.5?f.y:f.x;float sh2=sin(th*3.14159);sh2*=sh2;float sq=mod(cc.x+cc.y,2.0);
-          vec3 cw=mix(vec3(0.011,0.011,0.012),vec3(0.085,0.088,0.094),sh2*(0.55+0.45*sq))*(0.8+0.2*step(0.12,min(f.x,f.y)));
-          diffuseColor.rgb=mix(diffuseColor.rgb,cw,cm);carbM=cm;}}
+        cm*=ex*mix(1.0-smoothstep(0.08,0.4,gl),1.0,ctk)*(1.0-smoothstep(0.1,0.3,max(lampm,lens)))*(1.0-smoothstep(0.15,0.4,winMask));
+        if(cm>0.0){vec2 q=vec2(vOP.x,vOP.z+vOP.y*0.9)*62.0;vec2 cc=floor(q),f=fract(q);float tw=mod(floor(cc.x*0.5)+floor(cc.y*0.5),2.0);float th=tw>0.5?f.y:f.x;float sh2=sin(th*3.14159);sh2*=sh2;float sq=mod(cc.x+cc.y,2.0);
+          vec3 cw=mix(vec3(0.012,0.013,0.015),vec3(0.095,0.098,0.106),sh2*(0.55+0.45*sq))*(0.8+0.2*step(0.12,min(f.x,f.y)));
+          diffuseColor.rgb=mix(diffuseColor.rgb,cw,cm);carbM=cm;trimM*=1.0-cm;}}
     #endif`)};
-  mat.customProgramCacheKey=()=>'glbglass48';
+  mat.customProgramCacheKey=()=>'glbglass54';
   const m=new THREE.Mesh(g,mat);m.castShadow=true;m.receiveShadow=true;m.userData.kind='glb';m.userData.wheels=W4;
-  m.userData.orig=posG.slice();m.userData.dmg=new Float32Array(n);m.userData.hash=new Float32Array(n);
+  m.userData.orig=posG.slice();m.userData.origNor=norG.slice();m.userData.dmg=new Float32Array(n);m.userData.hash=new Float32Array(n);
   for(let i=0;i<n;i++)m.userData.hash[i]=Math.random();
   return m;
+}
+function buildGlbFittedGlass(pos,d){
+  const wn=d.win||{y0:0.92,z0:-1.65,z1:0.9,xMax:0.74,rz0:-1.0,rz1:0.2};
+  const conv=!!wn.conv,n=pos.length/3,grp=new THREE.Group();grp.userData.noDmg=true;
+  let maxY=0;for(let i=1;i<pos.length;i+=3)if(pos[i]>maxY)maxY=pos[i];
+  const bodyMaxX=(y,z,defX)=>{
+    let mx=0;
+    for(let i=0;i<n;i++){
+      const px=Math.abs(pos[i*3]),py=pos[i*3+1],pz=pos[i*3+2];
+      if(px<=wn.xMax+0.02&&Math.abs(py-y)<0.055&&Math.abs(pz-z)<0.075&&px>mx)mx=px;
+    }
+    return mx>0.25?mx:defX;
+  };
+  const roofYZ=(ax,zMin,zMax,dirFront)=>{
+    const pts=[];
+    for(let i=0;i<n;i++){const px=Math.abs(pos[i*3]),py=pos[i*3+1],pz=pos[i*3+2];if(Math.abs(px-ax)<0.08&&pz>=zMin&&pz<=zMax&&py>maxY-0.14)pts.push([py,pz])}
+    if(!pts.length)return null;
+    pts.sort((a,b)=>b[0]-a[0]);
+    const tb=pts.filter(p=>p[0]>=pts[0][0]-0.04);
+    tb.sort((a,b)=>dirFront?(b[1]-a[1]):(a[1]-b[1]));
+    return{y:tb[0][0],z:tb[0][1]};
+  };
+  const deckYZ=(ax,zMin,zMax,isFront)=>{
+    const pts=[];
+    for(let i=0;i<n;i++){const px=Math.abs(pos[i*3]),py=pos[i*3+1],pz=pos[i*3+2];if(Math.abs(px-ax)<0.08&&pz>=zMin&&pz<=zMax&&py>wn.y0-0.05&&py<wn.y0+0.11)pts.push([py,pz])}
+    if(!pts.length)return null;
+    pts.sort((a,b)=>isFront?(a[1]-b[1]):(b[1]-a[1]));
+    const k=Math.min(5,pts.length);let sy=0,sz=0;for(let i=0;i<k;i++){sy+=pts[i][0];sz+=pts[i][1]}
+    return{y:sy/k,z:sz/k};
+  };
+  const pillarW=(y,zA,zB,defW)=>{
+    const xs=[];
+    for(let i=0;i<n;i++){const px=Math.abs(pos[i*3]),py=pos[i*3+1],pz=pos[i*3+2];if(Math.abs(py-y)<0.035&&pz>=zA&&pz<=zB&&px>0.36&&px<=wn.xMax+0.01)xs.push(px)}
+    if(xs.length<4)return defW;
+    xs.sort((a,b)=>a-b);
+    return xs[Math.floor(xs.length*0.86)]-0.008;
+  };
+  const paneMat=new THREE.MeshPhysicalMaterial({
+    color:0x060709,transparent:true,depthWrite:false,side:THREE.FrontSide,
+    roughness:0.03,metalness:0.06,clearcoat:1.0,clearcoatRoughness:0.02,ior:1.52,reflectivity:1.0,
+    envMap:cubeRT.texture,envMapIntensity:1.45,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1
+  });
+  paneMat.onBeforeCompile=sh=>{
+    sh.fragmentShader=sh.fragmentShader.replace('#include <map_fragment>',`
+      float fres=pow(1.0-abs(dot(normalize(vNormal),normalize(vViewPosition))),2.8);
+      diffuseColor.rgb=mix(vec3(0.012,0.013,0.015),vec3(0.003,0.0035,0.004),fres);
+      diffuseColor.a=mix(0.48,0.88,fres);
+    `);
+  };
+  paneMat.customProgramCacheKey=()=>'glbglasspane54fit';
+  const mkGrid=(nu,nv,fn,flip)=>{
+    const P=[],I=[];
+    for(let j=0;j<=nv;j++)for(let i=0;i<=nu;i++){const p=fn(i/nu,j/nv);P.push(p[0],p[1],p[2])}
+    const R=nu+1;
+    for(let j=0;j<nv;j++)for(let i=0;i<nu;i++){const p=j*R+i;if(flip)I.push(p,p+1,p+R,p+1,p+R+1,p+R);else I.push(p,p+R,p+1,p+1,p+R,p+R+1)}
+    const bg=new THREE.BufferGeometry();bg.setAttribute('position',new THREE.Float32BufferAttribute(P,3));bg.setIndex(I);bg.computeVertexNormals();
+    const me=new THREE.Mesh(bg,paneMat);me.renderOrder=4;me.castShadow=false;me.receiveShadow=false;me.userData.noDmg=true;grp.add(me);
+  };
+  // 1. Лобовое стекло (включая кабриолет S2000)
+  {
+    const cz=wn.cowlZ!==undefined?wn.cowlZ:(wn.z1-0.22);
+    const h0=roofYZ(0.05,wn.rz1-0.16,wn.rz1+0.14,true)||{y:maxY-0.03,z:wn.rz1};
+    const hE=roofYZ(0.45,wn.rz1-0.12,wn.rz1+0.22,true)||{y:h0.y-0.05,z:h0.z+0.05};
+    const c0=deckYZ(0.05,cz-0.06,cz+0.08,true)||{y:wn.y0+0.04,z:cz};
+    const cE=deckYZ(0.45,cz-0.08,cz+0.08,true)||{y:c0.y-0.02,z:c0.z-0.02};
+    const wTop=pillarW(hE.y-0.02,h0.z-0.06,hE.z+0.10,0.50);
+    const wBot=pillarW(cE.y+0.03,c0.z-0.16,c0.z+0.06,0.65);
+    mkGrid(18,12,(u0,v)=>{
+      const u=u0*2-1,u2=u*u,hw=wBot+(wTop-wBot)*v;
+      const zb=c0.z+(cE.z-c0.z)*u2-0.008,zt=h0.z+(hE.z-h0.z)*u2-0.006;
+      const yb=c0.y+(cE.y-c0.y)*u2-0.008,yt=h0.y+(hE.y-h0.y)*u2-0.008;
+      const bow=0.016*(1-u2)*Math.sin(Math.PI*v);
+      const y=yb+(yt-yb)*v+bow*0.35,z=zb+(zt-zb)*v+bow;
+      const ax=Math.min(Math.abs(u)*hw,bodyMaxX(y,z,hw)-0.010);
+      return[u===0?0:(u<0?-1:1)*ax,y,z];
+    },true);
+  }
+  if(conv)return grp;
+  // 2. Заднее стекло
+  {
+    const h0=roofYZ(0.05,wn.rz0-0.22,wn.rz0+0.08,false)||{y:maxY-0.04,z:wn.rz0};
+    const hE=roofYZ(0.45,wn.rz0-0.24,wn.rz0+0.08,false)||{y:h0.y-0.05,z:h0.z-0.05};
+    const d0=deckYZ(0.05,wn.z0-0.15,wn.z0+0.12,false)||{y:wn.y0+0.04,z:wn.z0+0.05};
+    const dE=deckYZ(0.45,wn.z0-0.15,wn.z0+0.12,false)||{y:d0.y-0.02,z:d0.z+0.02};
+    const wTop=pillarW(hE.y-0.02,hE.z-0.10,h0.z+0.06,0.50);
+    const wBot=pillarW(dE.y+0.03,d0.z-0.06,d0.z+0.25,0.60);
+    mkGrid(18,12,(u0,v)=>{
+      const u=u0*2-1,u2=u*u,hw=wBot+(wTop-wBot)*v;
+      const zb=d0.z+(dE.z-d0.z)*u2+0.008,zt=h0.z+(hE.z-h0.z)*u2+0.006;
+      const yb=d0.y+(dE.y-d0.y)*u2-0.008,yt=h0.y+(hE.y-h0.y)*u2-0.008;
+      const bow=0.014*(1-u2)*Math.sin(Math.PI*v);
+      const y=yb+(yt-yb)*v+bow*0.35,z=zb+(zt-zb)*v-bow;
+      const ax=Math.min(Math.abs(u)*hw,bodyMaxX(y,z,hw)-0.010);
+      return[u===0?0:(u<0?-1:1)*ax,y,z];
+    },false);
+  }
+  // 3. Боковые стёкла (утоплены внутрь канала за стойками A/B/C, без конфликтов и щелей)
+  {
+    const NZ=22,z0Lim=wn.z0+0.22,z1Lim=wn.z1-0.26;
+    const rawCols=[];
+    for(let k=0;k<=NZ;k++){
+      const z=z0Lim+(z1Lim-z0Lim)*k/NZ;
+      let yT=0,xT=0,yB=wn.y0,xB=0,cB=0;
+      for(let i=0;i<n;i++){
+        if(Math.abs(pos[i*3+2]-z)>0.055)continue;
+        const ax=Math.abs(pos[i*3]),ay=pos[i*3+1];
+        if(ax<0.38||ax>wn.xMax+0.01)continue;
+        if(ay>wn.y0+0.05&&ay>yT){yT=ay;xT=ax}
+        if(ay>=wn.y0-0.04&&ay<=wn.y0+0.03){if(ax>xB){xB=ax;yB=ay}cB++}
+      }
+      if(!cB)xB=0.70;
+      rawCols.push({z,yT,xT:xT||0.50,yB,xB});
+    }
+    let iS=0,iE=NZ;
+    while(iS<iE&&rawCols[iS].yT-rawCols[iS].yB<0.07)iS++;
+    while(iE>iS&&rawCols[iE].yT-rawCols[iE].yB<0.07)iE--;
+    const cols=rawCols.slice(iS,iE+1),nc=cols.length-1;
+    if(nc>=2){
+      for(let p=0;p<2;p++){
+        const cp=cols.map(c=>Object.assign({},c));
+        for(let k=1;k<nc;k++)for(const fld of ['yT','xT','yB','xB'])cols[k][fld]=0.25*cp[k-1][fld]+0.5*cp[k][fld]+0.25*cp[k+1][fld];
+      }
+      [-1,1].forEach(sx=>{
+        mkGrid(nc,8,(u,v)=>{
+          const k=Math.min(nc,Math.max(0,Math.round(u*nc))),c=cols[k];
+          const yb=c.yB-0.015,yt=Math.max(yb+0.04,c.yT-0.010);
+          const y=yb+(yt-yb)*v;
+          const xChord=c.xB+(c.xT-c.xB)*v+0.010*Math.sin(Math.PI*v)-0.014;
+          const bx=bodyMaxX(y,c.z,xChord+0.02);
+          const ax=Math.max(0.36,Math.min(xChord,bx-0.015));
+          return[sx*ax,y,c.z];
+        },sx<0);
+      });
+    }
+  }
+  return grp;
+}
+function buildGlbGlass(gm,d){
+  if(d.winMode==='windshieldOnly'||d.winMode==='fit')return buildGlbFittedGlass(gm.geometry.attributes.position.array,d);
+  const srcG=gm.geometry,pos=srcG.attributes.position.array,ext=srcG.attributes.aExt.array,ia=srcG.index.array;
+  const wn=d.win||{y0:0.92,z0:-1.65,z1:0.9,xMax:0.74,rz0:-1.0,rz1:0.2};
+  const gIdx=[];
+  for(let t=0;t<ia.length;t+=3){
+    const a=ia[t],b=ia[t+1],c=ia[t+2];
+    if(ext[a]<0.45&&ext[b]<0.45&&ext[c]<0.45)continue;
+    const my=Math.max(pos[a*3+1],pos[b*3+1],pos[c*3+1]);if(my<wn.y0-0.08)continue;
+    const z0=Math.min(pos[a*3+2],pos[b*3+2],pos[c*3+2]),z1=Math.max(pos[a*3+2],pos[b*3+2],pos[c*3+2]);
+    if(z1<wn.z0-0.08||z0>wn.z1+0.08)continue;
+    const x0=Math.min(Math.abs(pos[a*3]),Math.abs(pos[b*3]),Math.abs(pos[c*3]));
+    if(x0>wn.xMax+0.05)continue;
+    const cx=(pos[a*3]+pos[b*3]+pos[c*3])/3,cy=(pos[a*3+1]+pos[b*3+1]+pos[c*3+1])/3-0.78,cz=(pos[a*3+2]+pos[b*3+2]+pos[c*3+2])/3+0.25;
+    const ux=pos[b*3]-pos[a*3],uy=pos[b*3+1]-pos[a*3+1],uz=pos[b*3+2]-pos[a*3+2];
+    const vx=pos[c*3]-pos[a*3],vy=pos[c*3+1]-pos[a*3+1],vz=pos[c*3+2]-pos[a*3+2];
+    const fx=uy*vz-uz*vy,fy=uz*vx-ux*vz,fz=ux*vy-uy*vx;
+    if(fx*cx+fy*cy+fz*cz>=0)gIdx.push(a,b,c);
+  }
+  if(!gIdx.length)return null;
+  const gg=new THREE.BufferGeometry();
+  gg.setAttribute('position',srcG.attributes.position);
+  gg.setAttribute('normal',srcG.attributes.normal);
+  gg.setAttribute('uv',srcG.attributes.uv);
+  gg.setAttribute('aExt',srcG.attributes.aExt);
+  gg.setIndex(gIdx);
+  const A=glbAssets[d.id],kuv=d.kitUV||null;
+  const gMat=new THREE.MeshPhysicalMaterial({
+    map:gm.material.map||glbTex(A,opts().tex),
+    transparent:true,depthWrite:false,side:THREE.FrontSide,
+    roughness:0.03,metalness:0.06,clearcoat:1.0,clearcoatRoughness:0.02,ior:1.52,reflectivity:1.0,
+    envMap:cubeRT.texture,envMapIntensity:1.45,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1
+  });
+  gMat.onBeforeCompile=sh=>{
+    glbWinUniforms(sh,d,pos,gm.material.userData.lampZ||[-1.8,1.8],kuv);
+    sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vOP;varying vec3 vON;attribute float aExt;varying float vExt;').replace('#include <begin_vertex>','#include <begin_vertex>\nvOP=position;vON=normal;vExt=aExt;');
+    sh.fragmentShader=sh.fragmentShader
+      .replace('#include <common>','#include <common>\nuniform vec2 kuv;uniform float hasK;uniform vec2 zLamp;uniform vec2 winY;uniform float winX;uniform float glK;uniform vec4 winBox;uniform vec4 winRoof;uniform float uWinMode;uniform vec2 uSideCut;uniform vec2 uPilB;uniform vec4 uPilAC;uniform vec4 gbA[5];uniform vec2 gbZ[5];uniform float hasGB;uniform vec4 lkA[2];uniform vec4 cabA[2];uniform float cabK;varying float vExt;varying vec3 vOP;varying vec3 vON;')
+      .replace('#include <map_fragment>',`
+      #ifdef USE_MAP
+        vec4 sdc=texture2D(map,vUv);
+        ${GLB_WIN_GLSL}
+        if(winMask<0.38)discard;
+        float fres=pow(1.0-abs(dot(normalize(vNormal),normalize(vViewPosition))),2.8);
+        diffuseColor.rgb=mix(vec3(0.012,0.013,0.015),vec3(0.003,0.0035,0.004),fres);
+        diffuseColor.a=mix(0.48,0.88,fres)*smoothstep(0.38,0.58,winMask);
+      #endif`);
+  };
+  gMat.customProgramCacheKey=()=>'glbglasspane54';
+  const m=new THREE.Mesh(gg,gMat);
+  m.renderOrder=4;m.castShadow=false;m.receiveShadow=false;m.userData.noDmg=true;
+  return m;
+}
+function buildGlbInterior(car,d,cust,gm){
+  const wn=d.win||{y0:0.92,z0:-1.65,z1:0.9,xMax:0.74,rz0:-1.0,rz1:0.2};
+  const conv=!!wn.conv,org=gm.userData.orig,n=org.length/3;
+  let maxY=0;for(let i=1;i<org.length;i+=3)if(org[i]>maxY)maxY=org[i];
+  const g=new THREE.Group();g.userData.noDmg=true;
+  const wIn=Math.max(0.46,Math.min(wn.xMax-0.14,(d.W||1.7)*0.41));
+  const yBelt=conv?0.78:(wn.y0-0.03),yFloor=conv?0.44:Math.max(0.34,yBelt-0.52),yRoof=maxY-0.06;
+  const zRear=conv?-0.82:Math.max(wn.z0+0.12,wn.rz0-0.25);
+  const zDash=conv?0.30:Math.min(wn.z1-0.14,wn.rz1+0.44);
+  const zSeat=(zRear*0.62+zDash*0.38);
+  const mCarpet=new THREE.MeshStandardMaterial({color:C('#101116'),roughness:0.92,metalness:0.05,side:THREE.DoubleSide});
+  const mDash=new THREE.MeshStandardMaterial({color:C('#181a21'),roughness:0.75,metalness:0.08});
+  const mTrim=new THREE.MeshStandardMaterial({color:C('#262933'),roughness:0.55,metalness:0.25,envMap:cubeRT.texture,envMapIntensity:0.9});
+  const mSeat=new THREE.MeshStandardMaterial({color:C('#14151b'),roughness:0.86,metalness:0.04});
+  const mSeatAcc=new THREE.MeshStandardMaterial({color:C('#a61428'),roughness:0.65,metalness:0.1});
+  const mAlu=new THREE.MeshStandardMaterial({color:C('#c8ced8'),metalness:0.88,roughness:0.24,envMap:cubeRT.texture,envMapIntensity:1.2});
+  const mCage=new THREE.MeshPhysicalMaterial({color:C('#d4dae4'),metalness:0.75,roughness:0.26,clearcoat:0.7,envMap:cubeRT.texture,envMapIntensity:1.2});
+  const box=(w,h,dp,x,y,z,m,rx,ry,rz)=>{const me=new THREE.Mesh(new THREE.BoxGeometry(w,h,dp),m);me.position.set(x,y,z);if(rx)me.rotation.x=rx;if(ry)me.rotation.y=ry;if(rz)me.rotation.z=rz;me.userData.noDmg=true;g.add(me);return me};
+  const tube=(a,b,r,m)=>{const d0=new THREE.Vector3().subVectors(b,a),len=d0.length();if(len<0.01)return;
+    const me=new THREE.Mesh(new THREE.CylinderGeometry(r,r,len,10),m);me.position.copy(a).add(b).multiplyScalar(0.5);
+    me.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),d0.normalize());me.userData.noDmg=true;g.add(me);return me};
+  // Замкнутая ванна салона (пол, перегородки, дверные карты) — крышей служит изогнутая обшивка самого кузова без плоской вставки
+  const cabLen=Math.max(0.9,zDash-zRear+0.32),cabMid=(zRear+zDash)/2;
+  if(!conv){
+    box(wIn*2.02,0.04,cabLen,0,yFloor,cabMid,mCarpet);
+    box(wIn*2.02,yBelt-yFloor+0.04,0.04,0,(yFloor+yBelt)/2,zDash+0.14,mCarpet);
+    box(wIn*2.02,yBelt-yFloor+0.10,0.05,0,(yFloor+yBelt)/2,zRear-0.14,mCarpet);
+    box(wIn*1.86,0.035,Math.max(0.3,wn.z0-zRear+0.25),0,yBelt-0.02,zRear-0.24,mCarpet); // задняя полка
+    [-1,1].forEach(sx=>{
+      box(0.05,yBelt-yFloor+0.04,cabLen,sx*wIn,(yFloor+yBelt)/2,cabMid,mCarpet);
+      box(0.06,0.055,cabLen*0.76,sx*(wIn-0.025),yBelt-0.04,cabMid,mTrim);
+      box(0.065,0.06,0.36,sx*(wIn-0.04),yBelt-0.19,cabMid+0.08,mDash);
+    });
+  }
+  // Центральный тоннель КПП и подлокотник
+  box(0.24,0.15,cabLen*0.86,0,yFloor+0.08,cabMid+0.04,mDash);
+  box(0.18,0.07,0.34,0,yFloor+0.19,zSeat-0.08,mTrim);
+  // Два спортивных ковша (водитель + пассажир)
+  const seatW=Math.min(0.44,wIn*0.76),sb=yFloor+0.08,sSc=conv?0.78:Math.min(1,Math.max(0.76,(yRoof-sb-0.09)/0.69));
+  [-1,1].forEach(sx=>{
+    const x=sx*Math.min(0.31,wIn*0.54),z=zSeat;
+    box(seatW*0.86,0.09,0.44,x,sb,z+0.06,mSeat,0.12);
+    [-1,1].forEach(bx=>box(0.07,0.12,0.44,x+bx*seatW*0.44,sb+0.03,z+0.06,mSeat,0.12));
+    box(seatW*0.84,0.52*sSc,0.10,x,sb+0.28*sSc,z-0.19,mSeat,-0.22);
+    [-1,1].forEach(bx=>box(0.085,0.48*sSc,0.15,x+bx*seatW*0.43,sb+0.27*sSc,z-0.14,mSeat,-0.22));
+    box(seatW*0.54,0.20*sSc,0.10,x,sb+0.59*sSc,z-0.25,mSeat,-0.15);
+    box(seatW*0.48,0.11*sSc,0.105,x,sb+0.47*sSc,z-0.225,mSeatAcc,-0.18);
+  });
+  // Торпедо, козырёк приборки, светящиеся шкалы и доп.датчики
+  const dW=wIn*1.92,dY=yBelt-0.02,dZ=zDash-0.04;
+  box(dW,0.15,0.32,0,dY-0.02,dZ+0.02,mDash);
+  const drvX=-Math.min(0.31,wIn*0.54);
+  box(0.42,0.11,0.22,drvX,dY+0.075,dZ+0.02,mDash);
+  box(0.22,0.26,0.26,0,dY-0.12,dZ-0.04,mTrim);
+  {
+    const cv=document.createElement('canvas');cv.width=256;cv.height=96;const cx=cv.getContext('2d');
+    cx.fillStyle='#060810';cx.fillRect(0,0,256,96);
+    [[70,50,36,'#19e6ff'],[186,50,36,'#ff2d95']].forEach(([px,py,r,col])=>{
+      cx.strokeStyle=col;cx.lineWidth=4;cx.beginPath();cx.arc(px,py,r,Math.PI*0.75,Math.PI*2.25);cx.stroke();
+      cx.strokeStyle='#ffb23d';cx.lineWidth=3;cx.beginPath();cx.moveTo(px,py);cx.lineTo(px+r*0.7,py-r*0.45);cx.stroke();
+    });
+    const tx=new THREE.CanvasTexture(cv);tx.encoding=THREE.sRGBEncoding;
+    const pm=new THREE.MeshBasicMaterial({map:tx,color:HDR('#ffffff',1.35)});
+    const pl=new THREE.Mesh(new THREE.PlaneGeometry(0.35,0.13),pm);
+    pl.position.set(drvX,dY+0.07,dZ-0.085);pl.rotation.set(0.18,Math.PI,0);pl.userData.noDmg=true;g.add(pl);
+  }
+  [-0.06,0,0.06].forEach(gx=>{
+    const gg=new THREE.Mesh(new THREE.CylinderGeometry(0.023,0.023,0.03,14),mTrim);gg.rotation.x=Math.PI/2;gg.position.set(gx,dY+0.08,dZ-0.05);gg.userData.noDmg=true;g.add(gg);
+    const gr=new THREE.Mesh(new THREE.RingGeometry(0.015,0.020,16),new THREE.MeshBasicMaterial({color:HDR('#19e6ff',1.6),side:THREE.DoubleSide}));
+    gr.position.set(gx,dY+0.08,dZ-0.066);gr.rotation.y=Math.PI;gr.userData.noDmg=true;g.add(gr);
+  });
+  // Рычаг КПП и гидравлический ручник
+  const shA=new THREE.Vector3(-0.02,yFloor+0.16,zDash-0.25),shB=new THREE.Vector3(-0.02,yFloor+0.33,zDash-0.26);
+  tube(shA,shB,0.011,mAlu);
+  const knob=new THREE.Mesh(new THREE.SphereGeometry(0.024,10,8),mTrim);knob.position.copy(shB);knob.userData.noDmg=true;g.add(knob);
+  const hbA=new THREE.Vector3(-0.09,yFloor+0.17,zDash-0.31),hbB=new THREE.Vector3(-0.09,yBelt+0.04,zDash-0.36);
+  tube(hbA,hbB,0.011,mAlu);
+  tube(hbB.clone().lerp(hbA,0.32),hbB,0.017,mSeatAcc);
+  // Спортивный руль с глубоким выносом (вращается в такт с колёсами)
+  const swG=new THREE.Group();swG.position.set(drvX,dY+0.03,dZ-0.23);swG.rotation.x=0.35;swG.userData.noDmg=true;
+  {
+    const R=0.155,rim=new THREE.Mesh(new THREE.TorusGeometry(R,0.017,10,28),mSeat);rim.userData.noDmg=true;swG.add(rim);
+    const topM=new THREE.Mesh(new THREE.BoxGeometry(0.024,0.038,0.038),mSeatAcc);topM.position.set(0,R,0);topM.userData.noDmg=true;swG.add(topM);
+    const sp1=new THREE.Mesh(new THREE.BoxGeometry(R*1.82,0.026,0.012),mAlu);sp1.position.set(0,-0.01,0.015);sp1.userData.noDmg=true;swG.add(sp1);
+    const sp2=new THREE.Mesh(new THREE.BoxGeometry(0.026,R*0.92,0.012),mAlu);sp2.position.set(0,-R*0.46,0.015);sp2.userData.noDmg=true;swG.add(sp2);
+    const hub=new THREE.Mesh(new THREE.CylinderGeometry(0.038,0.044,0.045,14),mSeatAcc);hub.rotation.x=Math.PI/2;hub.position.z=0.02;hub.userData.noDmg=true;swG.add(hub);
+  }
+  g.add(swG);car.glbSw=swG;
+  tube(new THREE.Vector3(drvX,dY+0.02,dZ-0.21),new THREE.Vector3(drvX,dY-0.05,dZ+0.02),0.028,mDash);
+  // Каркас безопасности (хорошо виден через боковые и заднее стёкла)
+  const cw=wIn*0.86,ch=conv?(yBelt+0.24):(yRoof-0.05),cz=zSeat-0.29;
+  if(!conv){
+    const L0=new THREE.Vector3(-cw,yFloor+0.06,cz),L1=new THREE.Vector3(-cw*0.88,ch,cz+0.04);
+    const R0=new THREE.Vector3(cw,yFloor+0.06,cz),R1=new THREE.Vector3(cw*0.88,ch,cz+0.04);
+    tube(L0,L1,0.02,mCage);tube(R0,R1,0.02,mCage);tube(L1,R1,0.02,mCage);
+    tube(L1,R0,0.018,mCage); // диагональная распорка
+    tube(new THREE.Vector3(-cw*0.94,yBelt-0.05,cz+0.01),new THREE.Vector3(cw*0.94,yBelt-0.05,cz+0.01),0.018,mCage); // ременная перекладина
+    const zr2=Math.max(wn.z0+0.15,cz-0.55),yr2=yBelt+0.01;
+    tube(L1,new THREE.Vector3(-cw*0.74,yr2,zr2),0.018,mCage);
+    tube(R1,new THREE.Vector3(cw*0.74,yr2,zr2),0.018,mCage);
+    box(0.22,0.055,0.035,0,yRoof-0.08,wn.rz1-0.02,mTrim); // салонное зеркало
+  }
+  return g;
 }
 const TUNE={tires:[0.93,1,1.07,1.15],diff:[1.0,null,0.25,0.0],weight:[0,40,80,120],gear:[1.12,1,0.9],angle:[1,1.12,1.24]};
 // ---------- тюнинг двигателя: детали, стейджи, свапы ----------
@@ -3343,10 +3740,12 @@ function syncCar(dt){
     const fz=veh.ws[j].fz,sag=clamp((fz-veh.d.mass*9.81/4)/60000,-0.05,0.05);
     w.pivot.position.y=(w.base?w.base.y:d.R)+sag;
   }
-  if(car.sw){const tz=-veh.delta*2.2;car.sw.rotation.z+=(tz-car.sw.rotation.z)*Math.min(1,dt*16)}
+  const tz=-veh.delta*2.2;
+  if(car.sw)car.sw.rotation.z+=(tz-car.sw.rotation.z)*Math.min(1,dt*16);
+  if(car.glbSw)car.glbSw.rotation.z+=(tz-car.glbSw.rotation.z)*Math.min(1,dt*16);
 }
 
-function setCabin(v){if(car.glb){car.glbMesh.visible=v;if(car.kit)car.kit.visible=v;if(car.overlay)car.overlay.visible=v}else car.cabin.visible=v}
+function setCabin(v){if(car.glb){car.glbMesh.visible=v;if(car.glbGlass)car.glbGlass.visible=v;if(car.glbCabin)car.glbCabin.visible=v;if(car.kit)car.kit.visible=v;if(car.overlay)car.overlay.visible=v}else car.cabin.visible=v}
 function toggleCam(){camMode=(camMode+1)%3;camSm=null;camRig.init=false;car.inter.position.set(0,0,0);car.inter.quaternion.identity();car.inter.visible=camMode===2;setCabin(camMode!==2);car.wheels.forEach(w=>{w.pivot.visible=camMode!==2&&(!car.glb||!!car.glbWheelsOK)});document.body.classList.toggle('cockpit',camMode===2);$('camtag').textContent=['ВИД СЗАДИ','КАПОТ','САЛОН'][camMode]}
 function doReset(){
   const cost=Math.round(car.damage*40),pay=Math.min(cost,Math.floor(save.money));save.money-=pay;
@@ -3584,6 +3983,7 @@ function updateTireFx(dt){
   car.bfLight.intensity*=Math.exp(-dt*22);
   const bright=veh.brk>0.1||veh.thr<0.02&&veh.speed>2?1:0;
   car.tailMat.color.copy(HDR('#ff1020',2.5+(veh.brk>0.1?5:0)));if(car.brakeDecals)car.brakeDecals.visible=veh.brk>0.1;
+  if(car.glbMesh&&car.glbMesh.material.userData.uBrake)car.glbMesh.material.userData.uBrake.value=veh.brk>0.1?1:0;
 }
 function fireBackfire(){
   car.flames.forEach(f=>{f.visible=true;f.userData.t=rnd(0.07,0.14);f.userData.len=rnd(0.7,1.5)});
@@ -3730,7 +4130,7 @@ function frame(now){
   smokeU.uCam.value.copy(camera.position);smokeU.uCar.value.set(car.root.position.x,car.root.position.y+0.8,car.root.position.z);
   if(state==='race')updateHUD();
   // динамические отражения
-  if(frameN%(MOB?6:4)===0){
+  if(frameN===1||frameN%(MOB?6:4)===0){
     car.root.visible=false;cubeCam.position.copy(car.root.position);cubeCam.position.y+=1.2;cubeCam.update(renderer,scene);car.root.visible=true;
   }
   finalPass.uniforms.time.value=(now*0.001)%10;finalPass.uniforms.tl.value=(now*0.001)%3600;
@@ -3779,9 +4179,10 @@ function buildGarage(){
   const tt=new THREE.Mesh(new THREE.BoxGeometry(1.52,0.05,0.72),new THREE.MeshStandardMaterial({color:C('#aab0b8'),metalness:1,roughness:0.25}));tt.position.set(-17,1.12,-10);g.add(tt);
   [['#1b5fd6',16,-11],['#d11',17,-12],['#e8e8ea',15.2,-12.5]].forEach(([c,x,z])=>{const d=new THREE.Mesh(new THREE.CylinderGeometry(0.3,0.3,0.9,16),new THREE.MeshStandardMaterial({color:C(c),roughness:0.5,metalness:0.4}));d.position.set(x,0.45,z);d.castShadow=true;g.add(d)});
   // свет
-  const l1=new THREE.PointLight(0xdce8ff,1.3,45,1.2);l1.position.set(-11,5,-6);g.add(l1);
-  const l2=new THREE.PointLight(0xffe6c8,1.3,45,1.2);l2.position.set(11,5,-6);g.add(l2);
-  const sp=new THREE.SpotLight(0xfff2e0,2.2,40,0.75,0.9,1);sp.position.set(0,11,0);g.add(sp);g.add(sp.target);sp.target.position.set(0,0,0);
+  const l1=new THREE.PointLight(0xdce8ff,1.65,45,1.2);l1.position.set(-10,5.2,-6);g.add(l1);
+  const l2=new THREE.PointLight(0xffe6c8,1.65,45,1.2);l2.position.set(10,5.2,-6);g.add(l2);
+  const l3=new THREE.PointLight(0xbbeeff,0.9,32,1.3);l3.position.set(0,3.2,8.5);g.add(l3);
+  const sp=new THREE.SpotLight(0xfff4e6,2.5,42,0.78,0.88,1);sp.position.set(0,11,0);g.add(sp);g.add(sp.target);sp.target.position.set(0,0,0);
 }
 function enterGarage(){garage.visible=true;applyEnv('garage')}
 function leaveGarage(){garage.visible=false;applyEnv(selTrack)}
@@ -3790,6 +4191,7 @@ function garageUpdate(dt){
   car.bodyG.rotation.set(0,0,0);
   car.wheels.forEach(w=>{w.pivot.position.y=w.base?w.base.y:car.def.R;if(w.front)w.pivot.rotation.y=0});
   if(car.sw)car.sw.rotation.z=0;
+  if(car.glbSw)car.glbSw.rotation.z=0;
   updateDebris(dt);
 }
 function gView(v){
